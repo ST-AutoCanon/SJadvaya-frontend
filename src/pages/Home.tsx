@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import AboutUs from "./AboutUs";
+import About from "./About";
 import CoreValues from "./CoreValues";
 import WhyGoElectric from "./whyGoElectric";
 import ContactPage from "./ContactPage";
@@ -107,7 +107,7 @@ export default function Home() {
       </div>
 
       {/* ABOUT SECTION */}
-      <AboutUs />
+      <About />
           <CoreValues />
           <WhyGoElectric />
           <ContactPage />
