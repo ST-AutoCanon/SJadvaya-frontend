@@ -10,8 +10,10 @@ import LoginModal from "./components/LoginModal";
 import HRMSPage from "./pages/HRMSpage";
 import Home from "./pages/Home";
 import About from "./pages/AboutUs";
-import ContactUs from "./pages/ContactPage";
+import Contact from "./pages/ContactPage";
+import ContactUs from "./pages/ContactUsPage";
 import ComingSoon from "./pages/ComingSoon";
+import AboutUs from "./pages/AboutUs";
 
 type ModalState = "none" | "normal" | "register";
 
@@ -44,6 +46,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/product" element={<ComingSoon />} />{" "}
           <Route path="/hrms" element={<HRMSPage />} />

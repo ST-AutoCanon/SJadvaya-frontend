@@ -92,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 text-white font-medium">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/aboutUs">AboutUs</Link>
           <Link to="/product">Core Competency</Link>
           <Link to="/product">Services</Link>
           <Link to="/product">News</Link>
@@ -124,8 +124,8 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
             <Link to="/" onClick={() => setIsOpen(false)}>
               Home
             </Link>
-            <Link to="/about" onClick={() => setIsOpen(false)}>
-              About
+            <Link to="/aboutUs" onClick={() => setIsOpen(false)}>
+              AboutUs
             </Link>
             <Link to="/product" onClick={() => setIsOpen(false)}>
               Core Competency
