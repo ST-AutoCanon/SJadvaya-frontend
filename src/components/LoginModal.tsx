@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import loginBg from "/banner13.png";
+import loginBg from "/banner2.png";
 import { Eye, EyeOff } from "lucide-react";
 
 interface LoginModalProps {

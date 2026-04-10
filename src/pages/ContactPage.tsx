@@ -341,7 +341,7 @@ export default function ContactPage() {
           <div className="space-y-8">
             <div className="rounded-2xl overflow-hidden shadow-lg">
               <img
-                src="/banner11.png"
+                src="/banner2.png"
                 alt="Electric Bus"
                 className="w-full h-[250px] md:h-[300px] object-cover"
               />

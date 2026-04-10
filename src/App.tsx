@@ -14,7 +14,11 @@ import Contact from "./pages/ContactPage";
 import ContactUs from "./pages/ContactUsPage";
 import ComingSoon from "./pages/ComingSoon";
 import AboutUs from "./pages/AboutUs";
+import Media from "./pages/media/Media";
 
+import EVBus from "./pages/products/EVBus";
+import EVRetrofit from "./pages/products/EVRetrofit";
+import ECartLoader from "./pages/products/ECartLoader";
 type ModalState = "none" | "normal" | "register";
 
 function App() {
@@ -49,7 +53,12 @@ function App() {
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/news" element={<Media />} />
           <Route path="/product" element={<ComingSoon />} />{" "}
+          {/* Product Routes */}
+          <Route path="/products/e-cart-loader" element={<ECartLoader />} />
+          <Route path="/products/ev-bus" element={<EVBus />} />
+          <Route path="/products/ev-retrofit" element={<EVRetrofit />} />
           <Route path="/hrms" element={<HRMSPage />} />
           {/* placeholder for products */}
         </Routes>
@@ -60,10 +69,7 @@ function App() {
       <LoginModal
         isOpen={modalState === "normal"}
         onClose={closeAll}
-        // onLoginSuccess={handleLoginSuccess}
-        // onSwitchToRegister={() => {
-        //   setModalState("register");
-        // }}
+
         onSwitchToHRMSLogin={openHRMS}
       />
     </div>

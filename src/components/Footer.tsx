@@ -150,7 +150,7 @@ export default function Footer() {
           {/* Company Info - Always Visible */}
           <div>
             <div className="flex items-center">
-              <img src="/logo2.png" alt="MyBrand Logo" className="h-16 w-38" />
+              <img src="/logo.png" alt="MyBrand Logo" className="h-16 w-28" />
             </div>
 
             <p className="text-sm text-gray-400 mb-6 leading-relaxed">

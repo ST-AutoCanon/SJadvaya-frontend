@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import loginBg from "/banner11.png";
+import loginBg from "/banner2.png";
 
 interface HRMSLoginModalProps {
   isOpen: boolean;
