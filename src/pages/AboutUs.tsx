@@ -1,52 +1,221 @@
+import { useState } from "react";
+
 export default function AboutUs() {
+  const [selected, setSelected] = useState(null);
+
+  const team = [
+    {
+      name: "Mr. T.S. Jaishankar",
+      role: "Managing Director",
+      img: "/team1.png",
+      details: `Mr. T.S. Jaishankar is a Technocrat with over 40 years of experience in the Automobile Industry.
+
+Key Achievements:
+• Established M&M Diesel Engine plant (₹200Cr) at Igatpuri
+• Built Toyota Kirloskar Motors supply chain system
+• Led ₹2500Cr Toyota Plant 2 (Etios & SUVs) without cost overrun
+• Successfully handled labour strike in 2015
+
+After Retirement:
+• Established Yanmar Diesel Engine project (₹500Cr, Chennai)
+• Supply chain optimization at Tata Steel
+• Supplier park setup at Kalinganagar`,
+    },
+
+    {
+      name: "Mr. N.N. Vishwanath",
+      role: "CEO & Director",
+      img: "/team2.png",
+      details: `Mr. N.N. Vishwanath is an Industrialist with over 45 years of experience in setting up various industries.
+
+• Played a key role in establishing ITPL, BASF, MRPL, VOLVO, TATA, TVS, TOYOTA and major textile industries
+• Established supply chain network for Toyota Production System
+• Key contributor in Toyota small car project
+
+Key Roles:
+• Deputy Director – Industries & Commerce, Govt. of Karnataka
+• General Manager – Toyota Kirloskar Auto Parts Pvt. Ltd.
+• Vice President – Toyota Kirloskar Motors
+• Vice President – Bharat Forge Ltd.`,
+    },
+
+    {
+      name: "Mr. Raghunath H.K",
+      role: "Director",
+      img: "/team3.png",
+      details: `Mr. Raghunath H.K. is a seasoned entrepreneur with over 30 years of experience across diverse industries.
+
+• Extensive experience across multiple business sectors
+• Strong Pan-India entrepreneurial network
+• Active contributor to business expansion and strategy
+
+His leadership supports the growth and diversification of SJAEM.`,
+    },
+
+    {
+      name: "Mr. Nagendra Chandrashekar",
+      role: "Director",
+      img: "/team4.png",
+      details: `Mr. Nagendra Chandrashekar is a Technocrat with over 20 years of experience in Toyota Group of Industries.
+
+Expertise:
+• Production Planning & Execution (PED)
+• Heijunka (Process Control)
+• Quality & QA IMI systems
+• Vendor Management
+• Kanban Inventory & Logistics Planning
+• ISO Audits, 5S & Kaizen
+
+At SJAEM, he leads R&D, Production, and Business Development.`,
+    },
+
+    {
+      name: "Mr. G. Balasubramanyam",
+      role: "General Manager",
+      img: "/team5.png",
+      details: `Mr. G. Balasubramanyam has over 35 years of experience in Machine Tools, Textile Machinery, and Automobile Manufacturing.
+
+Specialization:
+• Toyota Production System (TPS)
+• Production Control & Vendor Development
+
+Key Contributions:
+• Textile Machinery Plant setup
+• PDC & Machining Plant for transmission parts
+• Diesel & Hybrid Engine Plants for Toyota Industries India
+
+His expertise drives high-performance manufacturing systems.`,
+    },
+  ];
+
   return (
-    <div className="max-w-7xl mx-auto px-3 md:px-12 py-16 md:py-4 flex flex-col md:flex-row items-center gap-10 mt-24">
-      {/* Left Image */}
-      <div className="flex-1">
-        <img
-          src="/about1.png" // place your uploaded image in public folder
-          alt="Electric Vehicles"
-          className="rounded-xl shadow-lg w-full object-cover"
-        />
-      </div>
+    <div className="w-full">
+      {/* ================= ABOUT ================= */}
+      <div className="max-w-7xl mx-auto px-4 md:px-12 py-12 md:py-16 flex flex-col md:flex-row items-center gap-8 md:gap-12 mt-16 md:mt-24">
+        <div className="flex-1 w-full">
+          <img
+            src="/about2.png"
+            alt="About SJ Advaya Motors"
+            className="rounded-xl shadow-lg w-full object-cover"
+          />
+        </div>
 
-      {/* Right Content */}
-      <div className="flex-1 flex flex-col gap-3">
-        <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-          About SJ Advaya Motors
-        </span>
+        <div className="flex-1 flex flex-col gap-4 text-center md:text-left">
+          <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold w-fit mx-auto md:mx-0">
+            About SJ Advaya Motors
+          </span>
 
-        <h2 className="text-3xl md:text-4xl font-bold">
-          Pioneering the Electric Revolution
-        </h2>
+          <h2 className="text-2xl md:text-4xl font-bold">
+            Driving Excellence with Experience & Innovation
+          </h2>
 
-        <p className="text-gray-700 text-base md:text-lg leading-relaxed">
-          EcoVolt Motors is at the forefront of sustainable transportation,
-          combining cutting-edge technology with environmental responsibility.
-          We specialize in two critical areas: retrofitting existing vehicles
-          with electric powertrains and developing indigenous electric vehicles
-          from the ground up.
-          <br />
-          <br />
-          With a team of experienced engineers, designers, and sustainability
-          experts, we're committed to making electric transportation accessible,
-          affordable, and superior in performance. Our mission is to accelerate
-          the transition to zero-emission mobility while creating local jobs and
-          driving innovation.
-        </p>
+          <p className="text-gray-700 text-sm md:text-lg leading-relaxed">
+            SJ Advaya Motors is driven by strong leadership and deep industry
+            expertise. With decades of experience in automobile manufacturing
+            and supply chain systems, the company focuses on delivering
+            high-quality solutions and sustainable growth.
+          </p>
 
-        {/* Stats */}
-        <div className="flex gap-6 mt-4">
-          <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
-            <h3 className="text-2xl font-bold text-green-500">15+</h3>
-            <p className="text-gray-600">Years Experience</p>
-          </div>
-          <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
-            <h3 className="text-2xl font-bold text-green-500">100+</h3>
-            <p className="text-gray-600">Expert Team</p>
+          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+            <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
+              <h3 className="text-xl md:text-2xl font-bold text-green-500">
+                40+
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Years Leadership Experience
+              </p>
+            </div>
+
+            <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
+              <h3 className="text-xl md:text-2xl font-bold text-green-500">
+                100+
+              </h3>
+              <p className="text-gray-600 text-sm">Projects & Contributions</p>
+            </div>
           </div>
         </div>
       </div>
+
+      {/* ================= TEAM ================= */}
+      <div className="max-w-7xl mx-auto px-4 md:px-12 py-12 md:py-16">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-10 md:mb-16">
+          Meet Our Team
+        </h2>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10">
+          {team.map((member, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition"
+            >
+              <div className="relative">
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  // className="w-full h-48 md:h-56 object-cover"
+                  className="w-full h-48 md:h-56 object-contain bg-gray-100 pt-3"
+                />
+
+                <div className="absolute bottom-0 w-full bg-green-500 text-white text-center py-2 text-xs md:text-sm font-semibold rounded-t-2xl">
+                  {member.role}
+                </div>
+              </div>
+
+              <div className="p-4 text-center">
+                <h3 className="font-semibold text-base md:text-lg">
+                  {member.name}
+                </h3>
+
+                <button
+                  onClick={() => setSelected(member)}
+                  className="text-green-600 text-sm mt-3 hover:underline"
+                >
+                  Know More →
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ================= MODAL ================= */}
+      {selected && (
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
+          <div className="bg-white w-full max-w-4xl rounded-2xl overflow-hidden relative max-h-[90vh] overflow-y-auto">
+            <button
+              onClick={() => setSelected(null)}
+              className="absolute top-4 right-5 text-xl font-bold"
+            >
+              ✕
+            </button>
+
+            <div className="flex flex-col md:flex-row">
+              <div className="md:w-1/3 p-4 md:p-6 bg-gray-100 flex justify-center">
+                <img
+                  src={selected.img}
+                  alt={selected.name}
+                  // className="w-36 h-36 md:w-52 md:h-52 rounded-xl object-cover"
+                  className="w-36 h-36 md:w-52 md:h-52 rounded-xl object-contain bg-gray-200 pt-3"
+                />
+              </div>
+
+              <div className="md:w-2/3 p-4 md:p-6">
+                <h3 className="text-xl md:text-2xl font-bold">
+                  {selected.name}
+                </h3>
+
+                <p className="text-green-600 font-semibold mb-3">
+                  {selected.role}
+                </p>
+
+                <p className="text-gray-700 whitespace-pre-line text-sm md:text-base leading-relaxed">
+                  {selected.details}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
