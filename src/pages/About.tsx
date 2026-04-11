@@ -1,6 +1,6 @@
 export default function AboutUs() {
   return (
-    <div className="max-w-7xl mx-auto px-3 md:px-12 py-16 md:py-4 flex flex-col md:flex-row items-center gap-10">
+    <div className="max-w-7xl mx-auto px-3 md:px-12 py-16 md:py-4 flex flex-col md:flex-row items-center gap-10 mt-10">
       {/* Left Image */}
       <div className="flex-1">
         <img

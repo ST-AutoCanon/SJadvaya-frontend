@@ -3,6 +3,7 @@ import About from "./About";
 import CoreValues from "./CoreValues";
 import WhyGoElectric from "./whyGoElectric";
 import ContactPage from "./ContactPage";
+import VisionMission from "./VisionMission";
 interface Slide {
   id: number;
   title: string;
@@ -75,18 +76,7 @@ export default function Home() {
             />
 
             {/* Gradient Overlay */}
-            {/* <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/50 to-transparent pointer-events-none"></div> */}
-
-            {/* TEXT CONTENT */}
-            {/* <div className="absolute bottom-16 md:bottom-32 left-5 md:left-20 max-w-[90%] md:max-w-[60%]">
-              <h2 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-snug">
-                {slide.title}
-              </h2>
-
-              <p className="mt-3 md:mt-5 text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                {slide.subtitle}
-              </p>
-            </div> */}
+      
 
             <div className="absolute bottom-4 md:bottom-2 left-6 md:left-10">
               <div className="bg-black/50 px-4 py-3 md:px-6 md:py-4 rounded-md inline-block">

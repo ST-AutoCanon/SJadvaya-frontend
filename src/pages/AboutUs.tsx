@@ -1,4 +1,6 @@
 import { useState } from "react";
+import CoreValues from "./CoreValues";
+import VisionMission from "./VisionMission";
 
 export default function AboutUs() {
   const [selected, setSelected] = useState(null);
@@ -134,6 +136,19 @@ His expertise drives high-performance manufacturing systems.`,
             </div>
           </div>
         </div>
+      </div>
+      <div className="mt-10">
+        <h2 className="text-center text-2xl md:text-3xl font-semibold mb-6">
+          Our Purpose
+        </h2>
+
+        <div className="border-t border-gray-200 pt-10">
+          <VisionMission />
+        </div>
+      </div>
+
+      <div className="mt-6">
+        <CoreValues />
       </div>
 
       {/* ================= TEAM ================= */}
