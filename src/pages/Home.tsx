@@ -3,6 +3,7 @@ import About from "./About";
 import CoreValues from "./CoreValues";
 import WhyGoElectric from "./whyGoElectric";
 import ContactPage from "./ContactPage";
+import VisionMission from "./VisionMission";
 interface Slide {
   id: number;
   title: string;
