@@ -15,7 +15,7 @@ import ContactUs from "./pages/ContactUsPage";
 import ComingSoon from "./pages/ComingSoon";
 import AboutUs from "./pages/AboutUs";
 import Media from "./pages/media/Media";
-
+import ProductsPage from "./pages/products/Products";
 import EVBus from "./pages/products/EVBus";
 import EVRetrofit from "./pages/products/EVRetrofit";
 import ECartLoader from "./pages/products/ECartLoader";
@@ -54,8 +54,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/news" element={<Media />} />
-          <Route path="/product" element={<ComingSoon />} />{" "}
+          {/* <Route path="/product" element={<ComingSoon />} />{" "} */}
           {/* Product Routes */}
+          <Route path="/product" element={<ProductsPage />} />
           <Route path="/products/e-cart-loader" element={<ECartLoader />} />
           <Route path="/products/ev-bus" element={<EVBus />} />
           <Route path="/products/ev-retrofit" element={<EVRetrofit />} />

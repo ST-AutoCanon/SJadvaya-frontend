@@ -343,7 +343,7 @@ export default function ContactPage() {
               <img
                 src="/banner2.png"
                 alt="Electric Bus"
-                className="w-full h-[250px] md:h-[300px] object-cover"
+                className="w-full h-full object-contain md:object-cover"
               />
             </div>
 

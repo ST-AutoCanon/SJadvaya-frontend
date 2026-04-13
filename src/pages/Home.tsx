@@ -16,13 +16,13 @@ const slides: Slide[] = [
     id: 1,
     title: "Retrofits and New EV Vehicles",
     subtitle: "MAKE IN INDIA",
-    image: "/banner1.png",
+    image: "/banner122.png",
   },
   {
     id: 2,
     title: "Future of Electric Mobility",
     subtitle: "SUSTAINABLE DRIVING",
-    image: "/banner12.png",
+    image: "/banner121.png",
   },
   {
     id: 3,
@@ -60,6 +60,8 @@ export default function Home() {
     <div>
       {/* HERO SECTION */}
       <div className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
+      {/* <div className="relative w-full h-[50vh] md:h-[90vh] overflow-hidden"> */}
+        {/* <div className="relative w-full aspect-[4/5] md:aspect-[16/9] overflow-hidden"> */}
         {/* SLIDES */}
         {slides.map((slide, index) => (
           <div
@@ -72,11 +74,12 @@ export default function Home() {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover"
+              // className="w-full h-full object-cover"
+              className="w-full h-full object-contain md:object-cover"
+              // className="w-full h-full object-contain md:object-cover"
             />
 
             {/* Gradient Overlay */}
-      
 
             <div className="absolute bottom-4 md:bottom-2 left-6 md:left-10">
               <div className="bg-black/50 px-4 py-3 md:px-6 md:py-4 rounded-md inline-block">
