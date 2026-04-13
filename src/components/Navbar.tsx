@@ -21,11 +21,11 @@ const [productsOpen, setProductsOpen] = useState(false);
           <Link to="/">Home</Link>
           <Link to="/aboutUs">AboutUs</Link>
           {/* <Link to="/product">Core Competency</Link> */}
-          {/* <Link to="/product">Products</Link> */}
-          <div className="relative group">
+          <Link to="/product">Products</Link>
+          {/* <div className="relative group">
             <span className="cursor-pointer py-2">Products</span>
 
-            {/* Invisible hover bridge */}
+           
             <div className="absolute top-full left-0 w-full h-4"></div>
 
             <div
@@ -54,7 +54,7 @@ const [productsOpen, setProductsOpen] = useState(false);
                 EV Retrofit
               </Link>
             </div>
-          </div>
+          </div> */}
           <Link to="/news">News</Link>
           <Link to="/contactus">Contact Us</Link>
         </div>
@@ -89,9 +89,12 @@ const [productsOpen, setProductsOpen] = useState(false);
               AboutUs
             </Link>
 
+            <Link to="/product" onClick={() => setIsOpen(false)}>
+              Products
+            </Link>
             {/* ✅ Products Section */}
-            <div className="w-full">
-              {/* Toggle */}
+            {/* <div className="w-full">
+            
               <button
                 onClick={() => setProductsOpen(!productsOpen)}
                 className="w-full flex justify-between items-center py-2"
@@ -100,7 +103,7 @@ const [productsOpen, setProductsOpen] = useState(false);
                 <span className="text-lg">{productsOpen ? "−" : "+"}</span>
               </button>
 
-              {/* Dropdown */}
+              
               <div
                 className={`overflow-hidden transition-all duration-300 ${
                   productsOpen ? "max-h-40 mt-2" : "max-h-0"
@@ -138,7 +141,7 @@ const [productsOpen, setProductsOpen] = useState(false);
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <Link to="/news" onClick={() => setIsOpen(false)}>
               News

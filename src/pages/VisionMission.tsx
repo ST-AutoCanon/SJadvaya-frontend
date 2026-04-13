@@ -1,6 +1,9 @@
 export default function VisionMission() {
   return (
     <section className="w-full bg-white py-10 md:py-16">
+      <h2 className="text-center text-2xl md:text-3xl font-semibold mb-6">
+        Our Purpose
+      </h2>
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
         {/* Vision */}
         <div className="bg-gray-100 p-6 rounded-xl shadow-sm">

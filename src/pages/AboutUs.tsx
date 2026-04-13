@@ -93,7 +93,7 @@ His expertise drives high-performance manufacturing systems.`,
   return (
     <div className="w-full">
       {/* ================= ABOUT ================= */}
-      <div className="max-w-7xl mx-auto px-4 md:px-12 py-12 md:py-16 flex flex-col md:flex-row items-center gap-8 md:gap-12 mt-16 md:mt-24">
+      <div className="max-w-7xl mx-auto px-4 md:px-12 py-12 md:py-16 flex flex-col md:flex-row items-start gap-8 md:gap-12 mt-16 md:mt-24">
         <div className="flex-1 w-full">
           <img
             src="/about2.png"
@@ -138,11 +138,11 @@ His expertise drives high-performance manufacturing systems.`,
         </div>
       </div>
       <div className="mt-10">
-        <h2 className="text-center text-2xl md:text-3xl font-semibold mb-6">
+        {/* <h2 className="text-center text-2xl md:text-3xl font-semibold mb-6">
           Our Purpose
-        </h2>
+        </h2> */}
 
-        <div className="border-t border-gray-200 pt-10">
+        <div className="border-t border-gray-200 pt-1">
           <VisionMission />
         </div>
       </div>
