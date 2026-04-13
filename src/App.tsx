@@ -15,7 +15,7 @@ import ContactUs from "./pages/ContactUsPage";
 import ComingSoon from "./pages/ComingSoon";
 import AboutUs from "./pages/AboutUs";
 import Media from "./pages/media/Media";
-import ProductsPage from "./pages/products/Products";
+import ProductsPage from "./pages/products/product";
 import EVBus from "./pages/products/EVBus";
 import EVRetrofit from "./pages/products/EVRetrofit";
 import ECartLoader from "./pages/products/ECartLoader";
