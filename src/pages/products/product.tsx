@@ -164,16 +164,18 @@ function EVRetrofit() {
         </p>
 
         <div className="space-y-3">
-          {["Cost Effective", "Eco-Friendly", "Reliable Performance"].map(
-            (item, i) => (
-              <div
-                key={i}
-                className="bg-green-100 text-green-800 px-4 py-2 rounded-lg w-fit"
-              >
-                {item}
-              </div>
-            ),
-          )}
+          {[
+            "Lower Maintenance",
+            "Fleet Modernization",
+            "Reliable Performance",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-green-100 text-green-800 px-4 py-2 rounded-lg w-fit"
+            >
+              {item}
+            </div>
+          ))}
         </div>
       </div>
     </div>
