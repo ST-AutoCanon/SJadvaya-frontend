@@ -6,7 +6,7 @@ export default function ProductsPage() {
   const tabs = ["E-Cart Loader", "EV-Kit", "EV-Retrofit"];
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-24">
       {/* Banner */}
       <div className="relative h-[220px] md:h-[300px] flex items-center px-6 md:px-20 overflow-hidden">
         <img

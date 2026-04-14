@@ -3,7 +3,7 @@ import About from "./About";
 import CoreValues from "./CoreValues";
 import WhyGoElectric from "./whyGoElectric";
 import ContactPage from "./ContactPage";
-import VisionMission from "./VisionMission";
+
 interface Slide {
   id: number;
   title: string;
@@ -14,9 +14,9 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    title: "Retrofits and New EV Vehicles",
+    title: "Advancing Electric Mobility",
     subtitle: "MAKE IN INDIA",
-    image: "/banner122.png",
+    image: "/banner1.png",
   },
   {
     id: 2,
@@ -29,6 +29,12 @@ const slides: Slide[] = [
     title: "Innovative EV Solutions",
     subtitle: "POWERING THE NEXT GENERATION",
     image: "/banner3.png",
+  },
+  {
+    id: 4,
+    title: "Transforming Vehicle Performance",
+    subtitle: "ENGINEERED FOR MODERN MOBILITY",
+    image: "/banner124.png",
   },
 ];
 
@@ -47,20 +53,21 @@ export default function Home() {
     setCurrent(index);
   };
 
-  // Optional: Auto Slide (every 5 sec)
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 5000);
 
-    return () => clearInterval(interval);
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+  }, 5000);
+
+  return () => clearInterval(interval);
   }, []);
+  
 
   return (
     <div>
       {/* HERO SECTION */}
       <div className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden">
-      {/* <div className="relative w-full h-[50vh] md:h-[90vh] overflow-hidden"> */}
+        {/* <div className="relative w-full h-[50vh] md:h-[90vh] overflow-hidden"> */}
         {/* <div className="relative w-full aspect-[4/5] md:aspect-[16/9] overflow-hidden"> */}
         {/* SLIDES */}
         {slides.map((slide, index) => (
@@ -89,7 +96,7 @@ export default function Home() {
                 </h2>
 
                 {/* SUBTITLE */}
-                <p className="mt-2 md:mt-4 text-base sm:text-lg md:text-2xl lg:text-3xl font-extrabold uppercase tracking-widest bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+                <p className="mt-2 md:mt-4 text-base sm:text-lg md:text-2xl lg:text-3xl font-extrabold uppercase tracking-widest bg-gradient-to-r from-green-300 to-blue-300 bg-clip-text text-transparent">
                   {slide.subtitle}
                 </p>
               </div>

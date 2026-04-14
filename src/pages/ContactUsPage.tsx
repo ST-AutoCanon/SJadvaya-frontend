@@ -47,9 +47,8 @@ export default function ContactPage() {
             </h2>
 
             <p className="text-gray-600 mt-4 mb-8 max-w-lg">
-              Whether you're looking to retrofit your fleet or explore our
-              indigenous EV solutions, we're here to help. Get in touch with our
-              team for a consultation.
+              Explore our indigenous EV innovations with expert guidance every
+              step of the way. Connect with us for a personalized consultation.
             </p>
 
             <form className="space-y-6" onSubmit={handleSubmit}>
@@ -64,7 +63,7 @@ export default function ContactPage() {
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
-                    placeholder="John"
+                    placeholder="firstName"
                     className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
                   />
                 </div>
@@ -78,7 +77,7 @@ export default function ContactPage() {
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    placeholder="Doe"
+                    placeholder="lastName"
                     className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
                   />
                 </div>
@@ -94,7 +93,7 @@ export default function ContactPage() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="john@example.com"
+                  placeholder="email@example.com"
                   className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
                 />
               </div>
@@ -109,7 +108,7 @@ export default function ContactPage() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="+1 (555) 000-0000"
+                  placeholder="Phone Number"
                   className="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 focus:ring-2 focus:ring-green-500 outline-none"
                 />
               </div>
@@ -188,7 +187,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
                     <p className="text-gray-800 font-medium">
-                      info@yourcompany.com
+                      info@sjadvaya.com
                     </p>
                   </div>
                 </div>
