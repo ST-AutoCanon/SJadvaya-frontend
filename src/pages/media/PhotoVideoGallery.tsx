@@ -255,7 +255,7 @@ const PhotoVideoGallery: React.FC = () => {
 
   // 🔹 EVENT DETAIL VIEW (LIKE YOUR IMAGE)
   return (
-    <div className="px-4 py-6 sm:px-6 sm:py-8 bg-gray-100 min-h-screen">
+    <div className="px-4 py-6 sm:px-6 sm:py-8 bg-gray-100">
       {/* BACK BUTTON */}
       <button
         onClick={() => setSelectedEvent(null)}

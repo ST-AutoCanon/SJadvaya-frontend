@@ -32,8 +32,8 @@ const slides: Slide[] = [
   },
   {
     id: 4,
-    title: "Transforming Vehicle Performance",
-    subtitle: "ENGINEERED FOR MODERN MOBILITY",
+    title: "Intelligent EV Infrastructure",
+    subtitle: "MODERN MOBILITY",
     image: "/banner124.png",
   },
 ];
