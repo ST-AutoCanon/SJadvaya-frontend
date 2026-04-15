@@ -140,9 +140,27 @@
 // }
 
 
-import { Mail, Phone, MapPin } from "lucide-react";
-
+import { Mail, Phone, MapPin, MessageCircleDashed } from "lucide-react";
+import {
+  SiWhatsapp,
+} from "react-icons/si";
 export default function Footer() {
+
+  const handleEmailClick = () => {
+  const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
+  const email = "info@sjadvaya.com";
+
+  if (isMobile) {
+    window.location.href = `mailto:${email}`;
+  } else {
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }
+  };
+  
   return (
     <footer className="bg-gradient-to-br from-[#0f172a] via-[#0b1a2b] to-[#0f172a] text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-16">
@@ -160,19 +178,64 @@ export default function Footer() {
             </p>
 
             <div className="space-y-3 text-sm">
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <Mail size={16} className="text-green-400" />
-                <span>info@sjadvaya.com</span>
-              </div>
+              
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=info@sjadvaya.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium hover:text-green-600 transition"
+                >
+                  info@sjadvaya.com
+                </a>
+              </div> */}
 
+              
+              <div className="space-y-3 text-sm">
+  <div
+    onClick={handleEmailClick}
+    className="flex items-center gap-3 cursor-pointer group"
+  >
+    <Mail size={16} className="text-green-400" />
+    <span className="font-medium group-hover:text-green-600 transition">
+      info@sjadvaya.com
+    </span>
+  </div>
+              </div>
+              
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-green-400" />
-                <span>+1 (555) 123-4567</span>
+                <a
+                  href="tel:9986868788"
+                  className=" font-medium hover:text-green-400 cursor-pointer transition"
+                >
+                  9986868788
+                </a>
               </div>
+              {/* <div className="flex items-center gap-3">
+                <SiWhatsapp size={16} className="text-green-400" />
+                <a
+                  href="https://wa.me/919986868788"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium hover:text-green-600 transition"
+                >
+                  9986868788
+                </a>
+              </div> */}
 
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="text-green-400 mt-1" />
-                <span>123 Innovation Drive, Green City 10001</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=36+1st+floor+11th+cross+1st+block+Rajajinagar+Bangalore+560010"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className=" font-medium hover:text-green-400 cursor-pointer transition"
+                >
+                  #36, 1st Floor, 11th Cross, 1st Block <br />
+                  Rajajinagar, Bangalore - 560010
+                </a>
               </div>
             </div>
           </div>
