@@ -32,6 +32,21 @@ export default function ContactPage() {
     });
   };
 
+    const handleEmailClick = () => {
+  const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
+  const email = "info@sjadvaya.com";
+
+  if (isMobile) {
+    window.location.href = `mailto:${email}`;
+  } else {
+    window.open(
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  }
+  };
+
   return (
     <section className="w-full bg-gray-100 py-8 md:py-12 mt-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -174,21 +189,30 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Phone</p>
-                    <p className="text-gray-800 font-medium">
-                      +1 (555) 123-4567
-                    </p>
+                    <a
+                      href="tel:9986868788"
+                      className="text-gray-800 font-medium"
+                    >
+                      9986868788
+                    </a>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="bg-green-100 text-green-600 p-3 rounded-lg">
-                    <Mail size={18} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-500">Email</p>
-                    <p className="text-gray-800 font-medium">
-                      info@sjadvaya.com
-                    </p>
+                <div className="space-y-3 text-sm">
+                  <div
+                    onClick={handleEmailClick}
+                    className="flex items-center gap-3 cursor-pointer group"
+                  >
+                    <div className="bg-green-100 text-green-600 p-3 rounded-lg">
+                      <Mail size={18} />
+                    </div>
+                    <div>
+                      {" "}
+                      <p className="text-sm text-gray-500">Location</p>
+                      <span className="font-medium group-hover:text-green-600 transition">
+                        info@sjadvaya.com
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -198,10 +222,15 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Location</p>
-                    <p className="text-gray-800 font-medium">
-                      123 Innovation Drive <br />
-                      Tech Park, Green City 10001
-                    </p>
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=36+1st+floor+11th+cross+1st+block+Rajajinagar+Bangalore+560010"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-800 font-medium hover:text-green-600 transition"
+                    >
+                      #36, 1st Floor, 11th Cross, 1st Block <br />
+                      Rajajinagar, Bangalore - 560010
+                    </a>
                   </div>
                 </div>
 
