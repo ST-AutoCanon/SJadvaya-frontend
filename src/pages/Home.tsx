@@ -3,6 +3,7 @@ import About from "./About";
 import CoreValues from "./CoreValues";
 import WhyGoElectric from "./whyGoElectric";
 import ContactPage from "./ContactPage";
+import MilestoneTimeline from "./MilestoneTimeline";
 
 interface Slide {
   id: number;
@@ -22,7 +23,7 @@ const slides: Slide[] = [
     id: 2,
     title: "Future of Electric Mobility",
     subtitle: "SUSTAINABLE DRIVING",
-    image: "/banner121.png",
+    image: "/banner4.png",
   },
   {
     id: 3,
@@ -120,6 +121,7 @@ export default function Home() {
 
       {/* ABOUT SECTION */}
       <About />
+      <MilestoneTimeline />
       <CoreValues />
       <WhyGoElectric />
       <ContactPage />

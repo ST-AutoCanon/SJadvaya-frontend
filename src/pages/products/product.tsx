@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 export default function ProductsPage() {
-  const [activeTab, setActiveTab] = useState("EV-Kit");
+  const [activeTab, setActiveTab] = useState("EV-Bus");
 
-  const tabs = ["E-Cart Loader", "EV-Kit", "EV-Retrofit"];
+  const tabs = ["E-Cart Loader", "EV-Bus", "EV-Retrofit"];
 
   return (
     <div className="w-full mt-24">
@@ -47,7 +47,7 @@ export default function ProductsPage() {
       {/* Content */}
       {/* <div className="mt-12 px-4 md:px-12 max-w-7xl mx-auto"> */}
       <div className="mt-12 px-4 md:px-12 max-w-7xl mx-auto pb-16 md:pb-24">
-        {activeTab === "EV-Kit" && <EVKit />}
+        {activeTab === "EV-Bus" && <EVBus />}
         {activeTab === "E-Cart Loader" && <ECartLoader />}
         {activeTab === "EV-Retrofit" && <EVRetrofit />}
       </div>
@@ -56,47 +56,172 @@ export default function ProductsPage() {
 }
 
 /* ================= EV KIT ================= */
-function EVKit() {
+
+
+// function EVBus() {
+//   return (
+//     <div className="grid md:grid-cols-2 gap-10 items-center">
+//       {/* Image */}
+//       <div className="flex justify-center">
+//         <img
+//           src="/banner1.png"
+//           className="rounded-xl shadow-lg w-full max-w-md"
+//           onError={(e) => {
+//             e.target.src = "https://via.placeholder.com/800x400?text=Image";
+//           }}
+//         />
+//       </div>
+
+//       {/* Content */}
+//       <div>
+//         <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
+//         <p className="text-gray-600 mb-6">
+//           Our EV Bus is designed for sustainable public and private transport.
+//           It offers high efficiency, low operational costs, and zero emissions,
+//           making it ideal for modern urban mobility solutions.
+//         </p>
+
+//         <div className="space-y-3">
+//           {[
+//             "Zero Emissions",
+//             "Cost-Effective Conversion",
+//             "Reliable & Safe",
+//           ].map((item, i) => (
+//             <div
+//               key={i}
+//               className="bg-green-100 text-green-800 px-4 py-2 rounded-lg w-fit"
+//             >
+//               {item}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+
+//       <div className="flex justify-center">
+//         <img
+//           src="/banner4.png"
+//           className="rounded-xl shadow-lg w-full max-w-md"
+//           onError={(e) => {
+//             e.target.src = "https://via.placeholder.com/800x400?text=Image";
+//           }}
+//         />
+//       </div>
+
+//       {/* Content */}
+//       <div>
+//         <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
+//         <p className="text-gray-600 mb-6">
+//           Our EV Bus is designed for sustainable public and private transport.
+//           It offers high efficiency, low operational costs, and zero emissions,
+//           making it ideal for modern urban mobility solutions.
+//         </p>
+
+//         <div className="space-y-3">
+//           {[
+//             "Smart Fleet Ready",
+//             "High Passenger Capacity",
+//             "Energy Efficient",
+//           ].map((item, i) => (
+//             <div
+//               key={i}
+//               className="bg-green-100 text-green-800 px-4 py-2 rounded-lg w-fit"
+//             >
+//               {item}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+function EVBus() {
   return (
-    <div className="grid md:grid-cols-2 gap-10 items-center">
-      {/* Image */}
-      <div className="flex justify-center">
-        <img
-          src="/banner23.png"
-          className="rounded-xl shadow-lg w-full max-w-md"
-          onError={(e) => {
-            e.target.src = "https://via.placeholder.com/800x400?text=Image";
-          }}
-        />
-      </div>
+    <div className="bg-gray-100 py-10 px-4">
+      <div className="max-w-6xl mx-auto space-y-10">
+        {/* Row 1 */}
+        <div className="grid md:grid-cols-2 gap-10 items-center bg-white border rounded-xl p-6">
+          {/* Image */}
+          <div className="flex justify-center">
+            <img
+              src="/banner1.png"
+              className="rounded-xl shadow-sm w-full max-w-md border"
+              onError={(e) => {
+                e.target.src = "https://via.placeholder.com/800x400?text=Image";
+              }}
+            />
+          </div>
 
-      {/* Content */}
-      <div>
-        <h2 className="text-3xl font-bold mb-4">EV-Kit</h2>
-        <p className="text-gray-600 mb-6">
-          Our EV Kit is designed to transform conventional vehicles into
-          eco-friendly electric vehicles. It delivers efficient performance,
-          reduces fuel costs, and helps minimize environmental impact.
-        </p>
+          {/* Content */}
+          <div>
+            <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
+            <p className="text-gray-600 mb-6">
+              Our EV Bus is designed for sustainable public and private
+              transport. It offers high efficiency, low operational costs, and
+              zero emissions.
+            </p>
 
-        <div className="space-y-3">
-          {[
-            "Zero Emissions",
-            "Cost-Effective Conversion",
-            "Reliable & Safe",
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-green-100 text-green-800 px-4 py-2 rounded-lg w-fit"
-            >
-              {item}
+            <div className="space-y-3">
+              {[
+                "Zero Emissions",
+                "Cost-Effective Conversion",
+                "Reliable & Safe",
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
+                >
+                  {item}
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+        </div>
+
+        {/* Row 2 */}
+        <div className="grid md:grid-cols-2 gap-10 items-center bg-white border rounded-xl p-6">
+          {/* Image */}
+          <div className="flex justify-center">
+            <img
+              src="/banner4.png"
+              className="rounded-xl shadow-sm w-full max-w-md border"
+              onError={(e) => {
+                e.target.src = "https://via.placeholder.com/800x400?text=Image";
+              }}
+            />
+          </div>
+
+          {/* Content */}
+          <div>
+            <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
+            <p className="text-gray-600 mb-6">
+              Our EV Bus is designed for sustainable public and private
+              transport. It offers high efficiency, low operational costs, and
+              zero emissions.
+            </p>
+
+            <div className="space-y-3">
+              {[
+                "Smart Fleet Ready",
+                "High Passenger Capacity",
+                "Energy Efficient",
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
 
 /* ================= E-CART ================= */
 function ECartLoader() {

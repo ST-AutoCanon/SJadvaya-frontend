@@ -55,7 +55,7 @@ const [productsOpen, setProductsOpen] = useState(false);
               </Link>
             </div>
           </div> */}
-          <Link to="/news">News</Link>
+          {/* <Link to="/news">News</Link> */}
           <Link to="/contactus">Contact Us</Link>
         </div>
 
@@ -143,9 +143,9 @@ const [productsOpen, setProductsOpen] = useState(false);
               </div>
             </div> */}
 
-            <Link to="/news" onClick={() => setIsOpen(false)}>
+            {/* <Link to="/news" onClick={() => setIsOpen(false)}>
               News
-            </Link>
+            </Link> */}
 
             <Link to="/contactus" onClick={() => setIsOpen(false)}>
               Contact Us
