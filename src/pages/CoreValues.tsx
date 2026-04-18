@@ -95,7 +95,7 @@ export default function CoreValues() {
   ];
 
   return (
-    <section className="w-full bg-gray-100 py-8 md:py-14">
+    <section className="w-full bg-gray-100 py-8 md:py-14 mt-10">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <h2 className="text-center text-2xl md:text-3xl font-semibold text-gray-800 mb-6">

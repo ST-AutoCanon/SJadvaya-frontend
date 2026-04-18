@@ -345,7 +345,7 @@ type Step = {
 const steps: Step[] = [
   {
     title: "Kickoff",
-    description: "Project planning",
+    description: "Project",
     details: "We gather requirements, define scope, and align goals.",
     date: "Jan 2026",
     status: "completed",
@@ -377,7 +377,7 @@ export default function PowerStepper() {
   const [selectedStep, setSelectedStep] = useState<Step | null>(null);
 
   return (
-    <div className="w-full max-w-5xl mx-auto p-6">
+    <div className="w-full max-w-5xl mx-auto p-6 mt-10">
       <h2 className="text-center text-2xl font-bold mb-10 text-gray-800">
         Key Milestones
       </h2>
@@ -436,7 +436,7 @@ export default function PowerStepper() {
 
       {/* Modal */}
       {selectedStep && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/40 z-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-black/40 z-50 p-10">
           <div className="bg-white rounded-2xl p-6 max-w-md w-full shadow-lg relative">
             <button
               onClick={() => setSelectedStep(null)}
