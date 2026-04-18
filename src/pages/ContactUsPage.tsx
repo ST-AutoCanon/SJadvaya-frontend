@@ -34,7 +34,7 @@ export default function ContactPage() {
 
     const handleEmailClick = () => {
   const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
-  const email = "info@sjadvaya.com";
+  const email = "info@sjaem.com";
 
   if (isMobile) {
     window.location.href = `mailto:${email}`;
@@ -210,7 +210,7 @@ export default function ContactPage() {
                       {" "}
                       <p className="text-sm text-gray-500">Location</p>
                       <span className="font-medium group-hover:text-green-600 transition">
-                        info@sjadvaya.com
+                        info@sjaem.com
                       </span>
                     </div>
                   </div>

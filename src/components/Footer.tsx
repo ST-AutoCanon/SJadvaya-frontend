@@ -148,7 +148,7 @@ export default function Footer() {
 
   const handleEmailClick = () => {
   const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
-  const email = "info@sjadvaya.com";
+  const email = "info@sjaem.com";
 
   if (isMobile) {
     window.location.href = `mailto:${email}`;
@@ -191,19 +191,18 @@ export default function Footer() {
                 </a>
               </div> */}
 
-              
               <div className="space-y-3 text-sm">
-  <div
-    onClick={handleEmailClick}
-    className="flex items-center gap-3 cursor-pointer group"
-  >
-    <Mail size={16} className="text-green-400" />
-    <span className="font-medium group-hover:text-green-600 transition">
-      info@sjadvaya.com
-    </span>
-  </div>
+                <div
+                  onClick={handleEmailClick}
+                  className="flex items-center gap-3 cursor-pointer group"
+                >
+                  <Mail size={16} className="text-green-400" />
+                  <span className="font-medium group-hover:text-green-600 transition">
+                    info@sjaem.com
+                  </span>
+                </div>
               </div>
-              
+
               <div className="flex items-center gap-3">
                 <Phone size={16} className="text-green-400" />
                 <a
