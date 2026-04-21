@@ -55,86 +55,94 @@ export default function ProductsPage() {
   );
 }
 
-/* ================= EV KIT ================= */
+/* ================= EV Bus ================= */
 
 
 // function EVBus() {
 //   return (
-//     <div className="grid md:grid-cols-2 gap-10 items-center">
-//       {/* Image */}
-//       <div className="flex justify-center">
-//         <img
-//           src="/banner1.png"
-//           className="rounded-xl shadow-lg w-full max-w-md"
-//           onError={(e) => {
-//             e.target.src = "https://via.placeholder.com/800x400?text=Image";
-//           }}
-//         />
-//       </div>
+//     <div className="bg-gray-100 py-10 px-4">
+//       <div className="max-w-6xl mx-auto space-y-10">
+//         {/* Row 1 */}
+//         <div className="grid md:grid-cols-2 gap-10 items-center bg-white border rounded-xl p-6">
+//           {/* Image */}
+//           <div className="flex justify-center">
+//             <img
+//               src="/banner1.png"
+//               className="rounded-xl shadow-sm w-full max-w-md border"
+//               onError={(e) => {
+//                 e.target.src = "https://via.placeholder.com/800x400?text=Image";
+//               }}
+//             />
+//           </div>
 
-//       {/* Content */}
-//       <div>
-//         <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
-//         <p className="text-gray-600 mb-6">
-//           Our EV Bus is designed for sustainable public and private transport.
-//           It offers high efficiency, low operational costs, and zero emissions,
-//           making it ideal for modern urban mobility solutions.
-//         </p>
+//           {/* Content */}
+//           <div>
+//             <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
+//             <p className="text-gray-600 mb-6">
+//               Our EV Bus is designed for sustainable public and private
+//               transport. It offers high efficiency, low operational costs, and
+//               zero emissions.
+//             </p>
 
-//         <div className="space-y-3">
-//           {[
-//             "Zero Emissions",
-//             "Cost-Effective Conversion",
-//             "Reliable & Safe",
-//           ].map((item, i) => (
-//             <div
-//               key={i}
-//               className="bg-green-100 text-green-800 px-4 py-2 rounded-lg w-fit"
-//             >
-//               {item}
+//             <div className="space-y-3">
+//               {[
+//                 "Zero Emissions",
+//                 "Cost-Effective Conversion",
+//                 "Reliable & Safe",
+//               ].map((item, i) => (
+//                 <div
+//                   key={i}
+//                   className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
+//                 >
+//                   {item}
+//                 </div>
+//               ))}
 //             </div>
-//           ))}
+//           </div>
 //         </div>
-//       </div>
 
-//       <div className="flex justify-center">
-//         <img
-//           src="/banner4.png"
-//           className="rounded-xl shadow-lg w-full max-w-md"
-//           onError={(e) => {
-//             e.target.src = "https://via.placeholder.com/800x400?text=Image";
-//           }}
-//         />
-//       </div>
+//         {/* Row 2 */}
+//         <div className="grid md:grid-cols-2 gap-10 items-center bg-white border rounded-xl p-6">
+//           {/* Image */}
+//           <div className="flex justify-center">
+//             <img
+//               src="/banner4.png"
+//               className="rounded-xl shadow-sm w-full max-w-md border"
+//               onError={(e) => {
+//                 e.target.src = "https://via.placeholder.com/800x400?text=Image";
+//               }}
+//             />
+//           </div>
 
-//       {/* Content */}
-//       <div>
-//         <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
-//         <p className="text-gray-600 mb-6">
-//           Our EV Bus is designed for sustainable public and private transport.
-//           It offers high efficiency, low operational costs, and zero emissions,
-//           making it ideal for modern urban mobility solutions.
-//         </p>
+//           {/* Content */}
+//           <div>
+//             <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
+//             <p className="text-gray-600 mb-6">
+//               Our EV Bus is designed for sustainable public and private
+//               transport. It offers high efficiency, low operational costs, and
+//               zero emissions.
+//             </p>
 
-//         <div className="space-y-3">
-//           {[
-//             "Smart Fleet Ready",
-//             "High Passenger Capacity",
-//             "Energy Efficient",
-//           ].map((item, i) => (
-//             <div
-//               key={i}
-//               className="bg-green-100 text-green-800 px-4 py-2 rounded-lg w-fit"
-//             >
-//               {item}
+//             <div className="space-y-3">
+//               {[
+//                 "Smart Fleet Ready",
+//                 "High Passenger Capacity",
+//                 "Energy Efficient",
+//               ].map((item, i) => (
+//                 <div
+//                   key={i}
+//                   className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
+//                 >
+//                   {item}
+//                 </div>
+//               ))}
 //             </div>
-//           ))}
+//           </div>
 //         </div>
 //       </div>
 //     </div>
 //   );
 // }
-
 
 function EVBus() {
   return (
@@ -153,20 +161,17 @@ function EVBus() {
             />
           </div>
 
-          {/* Content */}
+          {/* Content - Project Outline */}
           <div>
-            <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
-            <p className="text-gray-600 mb-6">
-              Our EV Bus is designed for sustainable public and private
-              transport. It offers high efficiency, low operational costs, and
-              zero emissions.
-            </p>
+            <h2 className="text-3xl font-bold mb-4">Project Outline</h2>
 
             <div className="space-y-3">
               {[
-                "Zero Emissions",
-                "Cost-Effective Conversion",
-                "Reliable & Safe",
+                "12mt & 13.5mt",
+                "Range 300 ~ 400km",
+                "High % of Localization",
+                "Mfg. Plant in Karnataka",
+                "Expected Line off – 2nd Qtr ’27",
               ].map((item, i) => (
                 <div
                   key={i}
@@ -192,20 +197,17 @@ function EVBus() {
             />
           </div>
 
-          {/* Content */}
+          {/* Content - Current Status */}
           <div>
-            <h2 className="text-3xl font-bold mb-4">EV-Bus</h2>
-            <p className="text-gray-600 mb-6">
-              Our EV Bus is designed for sustainable public and private
-              transport. It offers high efficiency, low operational costs, and
-              zero emissions.
-            </p>
+            <h2 className="text-3xl font-bold mb-4">Current Status</h2>
 
             <div className="space-y-3">
               {[
-                "Smart Fleet Ready",
-                "High Passenger Capacity",
-                "Energy Efficient",
+                "Land with Building Identified",
+                "Bus Styling finalized",
+                "Structure design 90% completed",
+                "BOM sources Identified",
+                "Plant & Machinery decided",
               ].map((item, i) => (
                 <div
                   key={i}
@@ -222,7 +224,6 @@ function EVBus() {
   );
 }
 
-
 /* ================= E-CART ================= */
 function ECartLoader() {
   return (
@@ -230,7 +231,7 @@ function ECartLoader() {
       {/* Image */}
       <div className="flex justify-center">
         <img
-          src="/banner21.png"
+          src="/auto1.png"
           className="rounded-xl shadow-lg w-full max-w-md"
           onError={(e) => {
             e.target.src = "https://via.placeholder.com/800x400?text=Image";
@@ -244,7 +245,8 @@ function ECartLoader() {
         <p className="text-gray-600 mb-6">
           The E-Cart Loader is built for efficient last-mile cargo transport. It
           enables smooth and eco-friendly goods movement for logistics,
-          warehouses, and delivery operations.
+          warehouses, and delivery operations. <br></br>Locally Designed, Developed with
+          100% Local parts fitted. (With fixed battery)
         </p>
 
         <div className="space-y-3">
@@ -271,7 +273,7 @@ function EVRetrofit() {
       {/* Image */}
       <div className="flex justify-center">
         <img
-          src="/banner22.png"
+          src="/retro1.png"
           className="rounded-xl shadow-lg w-full max-w-md"
           onError={(e) => {
             e.target.src = "https://via.placeholder.com/800x400?text=Image";
