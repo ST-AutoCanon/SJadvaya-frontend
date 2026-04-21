@@ -4,7 +4,7 @@ export default function AboutUs() {
       {/* Left Image */}
       <div className="flex-1">
         <img
-          src="/about2.png" // place your uploaded image in public folder
+          src="/aboutus.png" // place your uploaded image in public folder
           alt="Electric Vehicles"
           className="rounded-xl shadow-lg w-full object-cover"
         />

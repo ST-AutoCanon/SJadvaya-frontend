@@ -96,13 +96,13 @@ His expertise drives high-performance manufacturing systems.`,
       <div className="max-w-7xl mx-auto px-4 md:px-12 py-12 md:py-16 flex flex-col md:flex-row items-start gap-8 md:gap-12 mt-16 md:mt-24">
         <div className="flex-1 w-full">
           <img
-            src="/about2.png"
+            src="/aboutus.png"
             alt="About SJ Advaya Motors"
             className="rounded-xl shadow-lg w-full object-cover"
           />
         </div>
 
-        <div className="flex-1 flex flex-col gap-4 text-center md:text-left">
+        {/* <div className="flex-1 flex flex-col gap-4 text-center md:text-left">
           <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold w-fit mx-auto md:mx-0">
             About SJ Advaya Motors
           </span>
@@ -116,6 +116,57 @@ His expertise drives high-performance manufacturing systems.`,
             expertise. With decades of experience in automobile manufacturing
             and supply chain systems, the company focuses on delivering
             high-quality solutions and sustainable growth.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+            <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
+              <h3 className="text-xl md:text-2xl font-bold text-green-500">
+                40+
+              </h3>
+              <p className="text-gray-600 text-sm">
+                Years Leadership Experience
+              </p>
+            </div>
+
+            <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
+              <h3 className="text-xl md:text-2xl font-bold text-green-500">
+                100+
+              </h3>
+              <p className="text-gray-600 text-sm">Projects & Contributions</p>
+            </div>
+          </div>
+        </div> */}
+
+        <div className="flex-1 flex flex-col gap-4 text-center md:text-left">
+          <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold w-fit mx-auto md:mx-0">
+            About SJ Advaya Motors
+          </span>
+
+          <h2 className="text-2xl md:text-4xl font-bold">
+            Driving Excellence with Experience & Innovation
+          </h2>
+
+          <p className="text-gray-700 text-sm md:text-lg leading-relaxed">
+            SJAEM Electromotive Private Limited (SJAEM), headquartered in
+            Bangalore, was incorporated in November 2023 with a vision to drive
+            the future of sustainable mobility. The company operates in the
+            electric vehicle (EV) manufacturing space, focusing on products such
+            as 3-wheeler loaders and electric buses.
+          </p>
+
+          <p className="text-gray-700 text-sm md:text-lg leading-relaxed">
+            SJAEM is led by experienced promoters and directors from leading
+            automobile organizations, bringing deep expertise in large-scale
+            project management and the establishment of manufacturing facilities
+            with investments exceeding ₹30,000 crore. Their strong industry
+            background enables the company to build robust, efficient, and
+            scalable operations.
+          </p>
+
+          <p className="text-gray-700 text-sm md:text-lg leading-relaxed">
+            At SJAEM, we are committed to delivering world-class quality,
+            reliability, and customer experience, while contributing to the
+            transition towards cleaner and smarter transportation solutions.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
