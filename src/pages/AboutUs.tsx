@@ -102,42 +102,7 @@ His expertise drives high-performance manufacturing systems.`,
           />
         </div>
 
-        {/* <div className="flex-1 flex flex-col gap-4 text-center md:text-left">
-          <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold w-fit mx-auto md:mx-0">
-            About SJ Advaya Motors
-          </span>
-
-          <h2 className="text-2xl md:text-4xl font-bold">
-            Driving Excellence with Experience & Innovation
-          </h2>
-
-          <p className="text-gray-700 text-sm md:text-lg leading-relaxed">
-            SJ Advaya Motors is driven by strong leadership and deep industry
-            expertise. With decades of experience in automobile manufacturing
-            and supply chain systems, the company focuses on delivering
-            high-quality solutions and sustainable growth.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
-              <h3 className="text-xl md:text-2xl font-bold text-green-500">
-                40+
-              </h3>
-              <p className="text-gray-600 text-sm">
-                Years Leadership Experience
-              </p>
-            </div>
-
-            <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
-              <h3 className="text-xl md:text-2xl font-bold text-green-500">
-                100+
-              </h3>
-              <p className="text-gray-600 text-sm">Projects & Contributions</p>
-            </div>
-          </div>
-        </div> */}
-
-        <div className="flex-1 flex flex-col gap-4 text-center md:text-left">
+        <div className="flex-1 flex flex-col gap-4 text-left md:text-left">
           <span className="bg-green-500 text-white px-4 py-1 rounded-full text-sm font-semibold w-fit mx-auto md:mx-0">
             About SJ Advaya Motors
           </span>
@@ -169,7 +134,7 @@ His expertise drives high-performance manufacturing systems.`,
             transition towards cleaner and smarter transportation solutions.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          {/* <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
               <h3 className="text-xl md:text-2xl font-bold text-green-500">
                 40+
@@ -185,7 +150,7 @@ His expertise drives high-performance manufacturing systems.`,
               </h3>
               <p className="text-gray-600 text-sm">Projects & Contributions</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="mt-10">
