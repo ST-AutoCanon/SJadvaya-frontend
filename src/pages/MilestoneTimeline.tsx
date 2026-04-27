@@ -124,6 +124,86 @@
 //   );
 // }
 
+// import React, { useState } from "react";
+
+// const cards = [
+//   {
+//     id: 1,
+//     title: "ISO 9001",
+//     image: "maj1.png",
+//     content: "SJAEM Certified its first product 'Jido' by NATRAX Indore on 25th March 2026",
+//   },
+//   {
+//     id: 2,
+//     title: "Security Compliance",
+//     image: "maj2.png",
+//     content: "SJAEM Certified its first product 'Jido' by NATRAX Indore on 25th March 2026",
+//   },
+//   {
+//     id: 3,
+//     title: "Best Business 2024",
+//     image: "maj3.png",
+//     content:"dd"
+//   },
+// ];
+
+// export default function Achievements() {
+//   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+//   return (
+//     <div className="bg-gray-100 py-12 px-4">
+//       <div className="max-w-6xl mx-auto text-center">
+//         <h2 className="text-3xl font-bold text-gray-800">Major Events</h2>
+//         <p className="text-gray-500 mt-2">
+//           SJAEM Certified its first product "Jido" by NATRAX Indore on 25th
+//           March 2026
+//         </p>
+
+//         {/* Cards */}
+//         {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10"> */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center gap-6 mt-10">
+//           {cards.map((card) => (
+//             <div
+//               key={card.id}
+//               onClick={() => setSelectedImage(card.image)}
+//               className="cursor-pointer bg-white rounded-2xl shadow-md p-4 hover:shadow-xl transition"
+//             >
+//               <img
+//                 src={card.image}
+//                 alt={card.title}
+//                 className="w-full h-60 object-contain rounded-lg"
+//               />
+//             </div>
+//           ))}
+//         </div>
+
+//    ]
+//       </div>
+
+//       {/* Modal */}
+//       {selectedImage && (
+//         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+//           <div className="relative bg-white rounded-xl p-4 max-w-xl w-full flex items-center justify-center">
+//             {/* Close Button */}
+//             <button
+//               onClick={() => setSelectedImage(null)}
+//               className="absolute top-2 right-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-full w-8 h-8 flex items-center justify-center text-lg font-bold"
+//             >
+//               ×
+//             </button>
+
+//             {/* Image */}
+//             <img
+//               src={selectedImage}
+//               alt="Full View"
+//               className="max-h-[70vh] w-auto object-contain rounded-lg"
+//             />
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
 
 import React, { useState } from "react";
 
@@ -132,22 +212,24 @@ const cards = [
     id: 1,
     title: "ISO 9001",
     image: "maj1.png",
+    content: "NATRAX Certificate for JIDO",
   },
   {
     id: 2,
     title: "Security Compliance",
     image: "maj2.png",
+    content: "JIDO our First EV product ",
   },
   {
     id: 3,
     title: "Best Business 2024",
     image: "maj3.png",
+    content: "MD Mr.T.S.Jaishankar receiving the certificate",
   },
 ];
 
-
 export default function Achievements() {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedImage, setSelectedImage] = useState(null); // fixed
 
   return (
     <div className="bg-gray-100 py-12 px-4">
@@ -159,7 +241,6 @@ export default function Achievements() {
         </p>
 
         {/* Cards */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-10"> */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center gap-6 mt-10">
           {cards.map((card) => (
             <div
@@ -172,14 +253,15 @@ export default function Achievements() {
                 alt={card.title}
                 className="w-full h-60 object-contain rounded-lg"
               />
+
+              {/* ✅ CONTENT BELOW CARD */}
+              {/* <p className="mt-3 text-sm text-gray-700">{card.content}</p> */}
+              <p className="mt-3 text-sm text-gray-800 px-3 py-2 rounded-lg font-medium">
+                {card.content}
+              </p>
             </div>
           ))}
         </div>
-
-        {/* Button */}
-        <button className="mt-10 bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition">
-          View All Achievements
-        </button>
       </div>
 
       {/* Modal */}
@@ -206,4 +288,3 @@ export default function Achievements() {
     </div>
   );
 }
-

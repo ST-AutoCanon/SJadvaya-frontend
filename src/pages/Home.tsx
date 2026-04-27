@@ -35,7 +35,7 @@ const slides: Slide[] = [
     id: 4,
     title: "Intelligent EV Infrastructure",
     subtitle: "MODERN MOBILITY",
-    image: "/banner124.png",
+    image: "/banner5.png",
   },
 ];
 
