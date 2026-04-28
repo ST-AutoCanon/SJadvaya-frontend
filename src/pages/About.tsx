@@ -6,7 +6,7 @@ export default function AboutUs() {
         {/* <div className="flex-1 flex"> */}
         <div className="flex-1 flex  md:mt-[140px] mb-[10px] md:mb-[120px]">
           <img
-            src="/about4.png"
+            src="/about(5).png"
             alt="Electric Vehicles"
             className="rounded-xl shadow-lg w-full h-full object-cover"
           />
