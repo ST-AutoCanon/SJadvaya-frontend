@@ -65,7 +65,6 @@ As an Independent Consultant, he has successfully supported the establishment of
 
 
 CORE STRENGTHS
-
 Government approvals & regulatory strategy | Large-scale project execution | Industrial infrastructure development | Corporate–government liaison | Supply chain and operations setup`
     },
 
@@ -81,7 +80,6 @@ He brings deep market understanding and an extensive network across industries, 
 
 
 CORE STRENGTHS
-
 At the organization, he plays a key role in business development, strategic alliances, and market expansion, leveraging his pan-India network to drive growth opportunities.`
     },
 
@@ -99,7 +97,6 @@ At SJAEM, he leads R&D, Production, and Business Development, ensuring scalable 
 
 
 CORE STRENGTHS
-
 • Lean Manufacturing & TPS Implementation
 Expert in Heijunka, Kanban, Kaizen, and 5S to eliminate waste and improve flow
 
@@ -130,8 +127,7 @@ His expertise lies in implementing Toyota Production System (TPS) methodologies 
 
 
 KEY ACHIEVEMENTS
-
-• Played a key leadership role in establishing:
+  • Played a key leadership role in establishing:
   • Textile machinery manufacturing plant - Kirloskar Toyota Textile Machinery Pvt. Ltd.
   • Pressure die casting plant
   • Machining plant for transmission components
@@ -148,7 +144,6 @@ KEY ACHIEVEMENTS
 
 
 CORE STRENGTHS
-
 Project Execution & Delivery | Production Planning & Control | Toyota Production System (TPS) | Vendor Development | Supply Chain Systems | Manufacturing Operations`
     },
   ];
@@ -167,7 +162,7 @@ Project Execution & Delivery | Production Planning & Control | Toyota Production
         <div className="flex flex-col md:flex-row gap-10 items-stretch">
           <div className="flex-1 flex md:mt-[150px]">
             <img
-              src="/about(5).png"
+              src="/about(8).png"
               alt="Electric Vehicles"
               className="rounded-xl shadow-lg w-full h-full object-cover"
             />
@@ -205,6 +200,7 @@ Project Execution & Delivery | Production Planning & Control | Toyota Production
               reliability, and customer experience, while contributing to the
               transition towards cleaner and smarter transportation solutions.
             </p>
+
 
             {/* <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <div className="bg-gray-200 rounded-lg px-6 py-4 text-center flex-1">
@@ -316,7 +312,7 @@ Project Execution & Delivery | Production Planning & Control | Toyota Production
                   {selected.details.split(/(CORE STRENGTHS|KEY ACHIEVEMENTS)/).map((part, index) => {
                     if (part === "CORE STRENGTHS" || part === "KEY ACHIEVEMENTS") {
                       return (
-                        <span key={index} className="font-bold block mt-3">
+                        <span key={index} className="font-bold block">
                           {part}
                         </span>
                       );

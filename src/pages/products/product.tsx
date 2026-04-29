@@ -6,18 +6,21 @@ export default function ProductsPage() {
   const tabs = ["E-Cart Loader", "EV-Bus", "EV-Retrofit"];
 
   return (
-    <div className="w-full mt-24">
+    <div className="w-full">
       {/* Banner */}
-      <div className="relative h-[400px] md:h-[650px] lg:h-[695px] flex items-center px-6 md:px-20 overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover object-[center_80%]"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src="/bannervideo3.mp4" type="video/mp4" />
-        </video>
+      {/* <div className="relative h-[400px] md:h-[650px] lg:h-[695px] flex items-center px-6 md:px-20 overflow-hidden"> */}
+      <div className="relative h-[45vh] md:h-[65vh] lg:h-[80vh] flex items-center px-4 md:px-20 overflow-hidden">
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <video
+            className="w-full h-full object-cover object-[center_92%]"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="/bannervideo5.mp4" type="video/mp4" />
+          </video>
+        </div>
 
         {/* <div className="absolute inset-0 bg-black/60"></div> */}
 
@@ -314,7 +317,7 @@ function EVBus() {
             <thead className="bg-gray-800 text-white sticky top-0">
               <tr>
                 <th className="px-3 py-2">No</th>
-                <th className="px-3 py-2 text-left">Specification</th>
+                <th className="px-3 py-2 text-center">Specification</th>
                 <th className="px-3 py-2">Unit</th>
                 <th className="px-3 py-2">12m</th>
                 <th className="px-3 py-2">13.5m</th>
@@ -406,7 +409,7 @@ function ECartLoader() {
                   <thead>
                     <tr className="bg-blue-500 text-white">
                       <th className="px-4 py-2 text-left">Feature</th>
-                      <th className="px-4 py-2 text-left">Specification</th>
+                      <th className="px-4 py-2 text-center">Specification</th>
                     </tr>
                   </thead>
 
@@ -433,7 +436,7 @@ function ECartLoader() {
             <thead className="bg-gray-800 text-white sticky top-0">
               <tr>
                 <th className="px-3 py-2">No</th>
-                <th className="px-3 py-2 text-left">Specification</th>
+                <th className="px-3 py-2 text-center">Specification</th>
                 <th className="px-3 py-2">Unit</th>
                 <th className="px-3 py-2">Value</th>
               </tr>
