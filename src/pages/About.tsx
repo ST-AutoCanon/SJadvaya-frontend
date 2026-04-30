@@ -4,9 +4,9 @@ export default function AboutUs() {
       <div className="flex flex-col md:flex-row gap-10 items-stretch">
         {/* Left Image */}
         {/* <div className="flex-1 flex"> */}
-        <div className="flex-1 flex  md:mt-[140px] mb-[10px] md:mb-[120px]">
+       <div className="flex-1 flex  md:mt-[140px] mb-[10px] md:mb-[120px]">
           <img
-            src="/about(5).png"
+            src="/about(8).png"
             alt="Electric Vehicles"
             className="rounded-xl shadow-lg w-full h-full object-cover"
           />
@@ -22,7 +22,7 @@ export default function AboutUs() {
             Pioneering the Electric Revolution
           </h2>
 
-          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed text-justify">
             The Indian electric bus industry is entering a high-growth phase
             driven by strong government commitment, rising environmental
             concerns, and a nationwide shift toward sustainable public and
