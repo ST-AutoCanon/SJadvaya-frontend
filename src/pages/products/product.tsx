@@ -149,111 +149,11 @@ export default function ProductsPage() {
 
 function EVBus() {
   return (
-    // <div className="bg-gray-100 py-10 px-4">
-    //   <div className="max-w-6xl mx-auto space-y-10">
-    //     {/* Row 1 */}
-    //     {/* Row 1 */}
-    //     <div className="flex flex-col lg:flex-row gap-10 items-center bg-white border rounded-xl p-6">
-    //       {/* Image (fixed size - unchanged) */}
-    //       <div className="flex justify-center flex-shrink-0">
-    //         <img
-    //           src="/banner1.png"
-    //           className="rounded-xl shadow-sm w-full max-w-md border"
-    //           onError={(e) => {
-    //             e.target.src = "https://via.placeholder.com/800x400?text=Image";
-    //           }}
-    //         />
-    //       </div>
-
-    //       {/* Right side (two contents side by side) */}
-    //       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-    //         {/* Content 1 */}
-    //         <div>
-    //           <h2 className="text-3xl font-bold mb-4">Project Outline</h2>
-    //           <div className="space-y-3">
-    //             {[
-    //               "12mt & 13.5mt",
-    //               "Range 300 ~ 400km",
-    //               "High % of Localization",
-    //               "Mfg. Plant in Karnataka",
-    //               "Expected Line off – 2nd Qtr ’27",
-    //             ].map((item, i) => (
-    //               <div
-    //                 key={i}
-    //                 className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
-    //               >
-    //                 {item}
-    //               </div>
-    //             ))}
-    //           </div>
-    //         </div>
-
-    //         {/* Content 2 (new right-side box) */}
-    //         <div>
-    //           <h2 className="text-3xl font-bold mb-4">Upcoming project</h2>
-    //           <div className="space-y-3">
-    //             {[
-    //               "Land with Building Identified",
-    //               "Bus Styling finalized",
-    //               "Structure design 90% completed",
-    //               "BOM sources Identified",
-    //               "Plant & Machinery decided",
-    //             ].map((item, i) => (
-    //               <div
-    //                 key={i}
-    //                 className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
-    //               >
-    //                 {item}
-    //               </div>
-    //             ))}
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-
-    //     {/* Row 2 */}
-    //     <div className="grid md:grid-cols-2 gap-10 items-center bg-white border rounded-xl p-6">
-    //       {/* Image */}
-    //       <div className="flex justify-center">
-    //         <img
-    //           src="/banner4.png"
-    //           className="rounded-xl shadow-sm w-full max-w-md border"
-    //           onError={(e) => {
-    //             e.target.src = "https://via.placeholder.com/800x400?text=Image";
-    //           }}
-    //         />
-    //       </div>
-
-    //       {/* Content - Current Status */}
-    //       <div>
-    //         <h2 className="text-3xl font-bold mb-4">Current Status</h2>
-
-    //         <div className="space-y-3">
-    //           {[
-    //             "Land with Building Identified",
-    //             "Bus Styling finalized",
-    //             "Structure design 90% completed",
-    //             "BOM sources Identified",
-    //             "Plant & Machinery decided",
-    //           ].map((item, i) => (
-    //             <div
-    //               key={i}
-    //               className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
-    //             >
-    //               {item}
-    //             </div>
-    //           ))}
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-
     <div className="bg-gray-100 py-10 px-4">
       <div className="max-w-6xl mx-auto space-y-10">
+
         {/* Row 1 */}
         <div className="flex flex-col lg:flex-row gap-10 items-center bg-white border rounded-xl p-6">
-          {/* Image */}
           <div className="flex justify-center flex-shrink-0">
             <img
               src="/banner1.png"
@@ -264,15 +164,12 @@ function EVBus() {
             />
           </div>
 
-          {/* Right side */}
           <div className="w-full">
-            {/* ✅ Single Heading */}
             <h2 className="text-3xl font-bold mb-6 text-center md:text-left">
               Upcoming project
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Content 1 */}
               <div className="space-y-3">
                 {[
                   "12mt & 13.5mt",
@@ -281,16 +178,12 @@ function EVBus() {
                   "Mfg. Plant in Karnataka",
                   "Expected Line off – 2nd Qtr ’27",
                 ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
-                  >
+                  <div key={i} className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border">
                     {item}
                   </div>
                 ))}
               </div>
 
-              {/* Content 2 */}
               <div className="space-y-3">
                 {[
                   "Land with Building Identified",
@@ -299,10 +192,7 @@ function EVBus() {
                   "BOM sources Identified",
                   "Plant & Machinery decided",
                 ].map((item, i) => (
-                  <div
-                    key={i}
-                    className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
-                  >
+                  <div key={i} className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border">
                     {item}
                   </div>
                 ))}
@@ -311,18 +201,19 @@ function EVBus() {
           </div>
         </div>
 
-        {/* Row 2 */}
-        <div className="overflow-auto max-h-[400px] border rounded-lg shadow-sm">
+        {/* Row 2 TABLE (UPDATED TD STYLING) */}
+       <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] border rounded-lg shadow-sm bg-white">
           <table className="w-full text-sm border-collapse">
             <thead className="bg-gray-800 text-white sticky top-0">
               <tr>
-                <th className="px-3 py-2">No</th>
-                <th className="px-3 py-2 text-center">Specification</th>
-                <th className="px-3 py-2">Unit</th>
-                <th className="px-3 py-2">12m</th>
-                <th className="px-3 py-2">13.5m</th>
+                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap">No</th>
+                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap text-center">Specification</th>
+                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap">Unit</th>
+                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap">12m</th>
+                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap">13.5m</th>
               </tr>
             </thead>
+
             <tbody>
               {[
                 ["1", "Dimensions", "mt", "11.8 x 2.5", "13.2 x 2.5"],
@@ -349,12 +240,20 @@ function EVBus() {
                 ["22", "Body", "", "Steel tube", "Steel tube"],
                 ["23", "A/C", "", "18~39Kw", "18~40Kw"],
               ].map((row, i) => (
-                <tr
-                  key={i}
-                  className={i % 2 === 0 ? "bg-gray-100" : "bg-white"}
-                >
+                <tr key={i} className={i % 2 === 0 ? "bg-gray-100" : "bg-white"}>
                   {row.map((cell, j) => (
-                    <td key={j} className="px-3 py-2 text-left border">
+                    <td
+                      key={j}
+                      className="
+    px-2 md:px-3 
+    py-1 md:py-2 
+    text-left 
+    border 
+    text-[10px] md:text-sm   // 👈 smaller text on mobile
+    break-words              // 👈 allow wrapping
+    whitespace-normal        // 👈 remove nowrap
+  "
+                    >
                       {cell}
                     </td>
                   ))}
@@ -363,6 +262,7 @@ function EVBus() {
             </tbody>
           </table>
         </div>
+
       </div>
     </div>
   );
@@ -431,7 +331,7 @@ function ECartLoader() {
         </div>
 
         {/* ================= FULL SPEC TABLE ================= */}
-        <div className="overflow-auto max-h-[420px] border rounded-lg shadow-sm bg-white">
+       <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] border rounded-lg shadow-sm bg-white">
           <table className="w-full text-sm border-collapse">
             <thead className="bg-gray-800 text-white sticky top-0">
               <tr>
@@ -468,7 +368,7 @@ function ECartLoader() {
               ].map((row, i) => (
                 <tr key={i} className="even:bg-gray-100">
                   {row.map((cell, j) => (
-                    <td key={j} className="px-3 py-2 text-left border">
+                    <td key={j} className="px-2 md:px-3 py-1 md:py-2 text-[10px] md:text-sm border break-words">
                       {cell}
                     </td>
                   ))}
