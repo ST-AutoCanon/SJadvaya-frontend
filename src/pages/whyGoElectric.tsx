@@ -65,7 +65,7 @@ export default function EcoVoltAdvantage() {
 
         {/* Heading */}
         <h2 className="text-center text-3xl md:text-5xl font-bold text-white mb-4">
-          The EcoVolt Advantage
+          The SJAEM Advantage
         </h2>
 
         {/* Subtitle */}
