@@ -186,7 +186,7 @@ function EVBus() {
 
               <div className="space-y-3">
                 {[
-                  "Land with Building Identified",
+                  "Identified Mass production facility",
                   "Bus Styling finalized",
                   "Structure design 90% completed",
                   "BOM sources Identified",
