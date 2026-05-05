@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Phone, Mail, MapPin } from "lucide-react";
+import emailjs from "emailjs-com"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -19,18 +20,43 @@ export default function ContactPage() {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you can also send formData to your backend API
-    alert("Thank you! Your message has been sent successfully.");
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: "",
-    });
+  e.preventDefault();
+
+  const templateParams = {
+    first_name: formData.firstName,
+    last_name: formData.lastName,
+    email: formData.email,
+    phone: formData.phone,
+    service: formData.service,
+    message: formData.message,
   };
+
+  emailjs
+    .send(
+      "service_nljorbv",    // 🔴 replace
+      "template_8u46ro1",    // 🔴 replace
+      templateParams,
+      "MTAnQRgr1M_DqWtX4"      // 🔴 replace
+    )
+    .then(
+      () => {
+        alert("Message sent successfully ✅");
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+        });
+      },
+      (error) => {
+        console.error(error);
+        alert("Failed to send message ❌");
+      }
+    );
+};
 
     const handleEmailClick = () => {
   const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
@@ -208,7 +234,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       {" "}
-                      <p className="text-sm text-gray-500">Location</p>
+                      <p className="text-sm text-gray-500">Email</p>
                       <span className="font-medium group-hover:text-green-600 transition">
                         info@sjaem.com
                       </span>
