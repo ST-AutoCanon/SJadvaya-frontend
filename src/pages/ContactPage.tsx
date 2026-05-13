@@ -393,7 +393,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       {" "}
-                      <p className="text-sm text-gray-500">Location</p>
+                      <p className="text-sm text-gray-500">Email</p>
                       <span className="font-medium group-hover:text-green-600 transition">
                         info@sjaem.com
                       </span>
