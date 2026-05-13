@@ -307,7 +307,7 @@ function ECartLoader() {
               <div className="w-full md:w-[320px] overflow-hidden rounded-lg shadow-md">
                 <table className="w-full border-collapse">
                   <thead>
-                    <tr className="bg-blue-500 text-white">
+                    <tr className="bg-green-600 text-white">
                       <th className="px-4 py-2 text-left">Feature</th>
                       <th className="px-4 py-2 text-center">Specification</th>
                     </tr>
@@ -426,7 +426,7 @@ function EVRetrofit() {
           <div className="overflow-hidden rounded-lg shadow-md">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="bg-blue-500 text-white">
+                <tr className="bg-green-600 text-white">
                   <th className="px-4 py-2">Feature</th>
                   <th className="px-4 py-2">Specification</th>
                 </tr>
@@ -448,7 +448,7 @@ function EVRetrofit() {
           <div className="overflow-hidden rounded-lg shadow-md">
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="bg-blue-500 text-white">
+                <tr className="bg-green-600 text-white">
                   <th className="px-4 py-2">Feature</th>
                   <th className="px-4 py-2">Specification</th>
                 </tr>

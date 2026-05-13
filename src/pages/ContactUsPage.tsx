@@ -20,57 +20,60 @@ export default function ContactPage() {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const templateParams = {
-    first_name: formData.firstName,
-    last_name: formData.lastName,
-    email: formData.email,
-    phone: formData.phone,
-    service: formData.service,
-    message: formData.message,
+    const templateParams = {
+      first_name: formData.firstName,
+      last_name: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      service: formData.service,
+      message: formData.message,
+      time: new Date().toLocaleString(), // ✅ ADD THIS
+    };
+
+    emailjs
+      .send(
+        "service_rgv58wa",    //replace
+        "template_8u46ro1",    // replace
+        templateParams,
+        "MTAnQRgr1M_DqWtX4"      // replace
+      )
+      .then(
+        () => {
+          alert("Message sent successfully ✅");
+
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            service: "",
+            message: "",
+           
+
+          });
+        },
+        (error) => {
+          console.error(error);
+          alert("Failed to send message ❌");
+        }
+      );
   };
 
-  emailjs
-    .send(
-      "service_nljorbv",    // 🔴 replace
-      "template_8u46ro1",    // 🔴 replace
-      templateParams,
-      "MTAnQRgr1M_DqWtX4"      // 🔴 replace
-    )
-    .then(
-      () => {
-        alert("Message sent successfully ✅");
+  const handleEmailClick = () => {
+    const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
+    const email = "info@sjaem.com";
 
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          service: "",
-          message: "",
-        });
-      },
-      (error) => {
-        console.error(error);
-        alert("Failed to send message ❌");
-      }
-    );
-};
-
-    const handleEmailClick = () => {
-  const isMobile = /Android|iPhone|iPad/i.test(navigator.userAgent);
-  const email = "info@sjaem.com";
-
-  if (isMobile) {
-    window.location.href = `mailto:${email}`;
-  } else {
-    window.open(
-      `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
-      "_blank",
-      "noopener,noreferrer"
-    );
-  }
+    if (isMobile) {
+      window.location.href = `mailto:${email}`;
+    } else {
+      window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }
   };
 
   return (
