@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function ProductsPage() {
   const [activeTab, setActiveTab] = useState("EV-Bus");
 
-  const tabs = ["E-Cart Loader", "EV-Bus", "EV-Retrofit"];
+  const tabs = ["EV-Bus", "E-Cart Loader", "EV-Retrofit"];
 
   return (
     <div className="w-full">
@@ -202,18 +202,31 @@ function EVBus() {
         </div>
 
         {/* Row 2 TABLE (UPDATED TD STYLING) */}
-       <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] border rounded-lg shadow-sm bg-white">
-          <table className="w-full text-sm border-collapse">
-            <thead className="bg-gray-800 text-white sticky top-0">
+        <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] rounded-lg shadow-sm bg-white">
+          <table className="w-full text-sm table-fixed">
+            <thead className="bg-green-600 text-white sticky top-0">
               <tr>
-                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap">No</th>
-                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap text-center">Specification</th>
-                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap">Unit</th>
-                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap">12m</th>
-                <th className="px-2 md:px-3 py-2 text-xs md:text-sm whitespace-nowrap">13.5m</th>
+                <th className="w-[8%] px-2 md:px-3 py-2 text-left text-xs md:text-sm">
+                  No
+                </th>
+
+                <th className="w-[42%] pl-4 md:pl-30 py-2 text-left text-xs md:text-sm">
+                  Specification
+                </th>
+
+                <th className="w-[15%] px-2 md:px-3 py-2 text-left text-xs md:text-sm">
+                  Unit
+                </th>
+
+                <th className="w-[17%] px-2 md:px-3 py-2 text-left text-xs md:text-sm">
+                  12m
+                </th>
+
+                <th className="w-[18%] px-2 md:px-3 py-2 text-left text-xs md:text-sm">
+                  13.5m
+                </th>
               </tr>
             </thead>
-
             <tbody>
               {[
                 ["1", "Dimensions", "mt", "11.8 x 2.5", "13.2 x 2.5"],
@@ -240,19 +253,18 @@ function EVBus() {
                 ["22", "Body", "", "Steel tube", "Steel tube"],
                 ["23", "A/C", "", "18~39Kw", "18~40Kw"],
               ].map((row, i) => (
-                <tr key={i} className={i % 2 === 0 ? "bg-gray-100" : "bg-white"}>
+                <tr key={i} className={i % 2 === 0 ? "bg-[#e3f6e9]" : "bg-[#c5ecd1]"}>
                   {row.map((cell, j) => (
                     <td
                       key={j}
-                      className="
-    px-2 md:px-3 
-    py-1 md:py-2 
-    text-left 
-    border 
-    text-[10px] md:text-sm   // 👈 smaller text on mobile
-    break-words              // 👈 allow wrapping
-    whitespace-normal        // 👈 remove nowrap
-  "
+                      className={`
+    ${j === 1 ? "pl-6 md:pl-30" : "px-2 md:px-3"}
+    py-2
+    text-left
+    align-top
+    text-[10px] md:text-sm
+    break-words
+  `}
                     >
                       {cell}
                     </td>
@@ -289,7 +301,7 @@ function ECartLoader() {
           </div>
 
           {/* CONTENT */}
-          <div className="w-full">
+          <div className="w-full mb-18">
             <h2 className="text-3xl font-bold mb-4">
               E-Cart Loader
             </h2>
@@ -314,11 +326,11 @@ function ECartLoader() {
                   </thead>
 
                   <tbody>
-                    <tr className="bg-blue-100">
+                    <tr className="bg-[#e3f6e9]">
                       <td className="px-4 py-2 font-medium">Range</td>
                       <td className="px-4 py-2">80km</td>
                     </tr>
-                    <tr className="bg-blue-50">
+                    <tr className="bg-[#c5ecd1]">
                       <td className="px-4 py-2 font-medium">Charging</td>
                       <td className="px-4 py-2">4 hrs</td>
                     </tr>
@@ -331,14 +343,25 @@ function ECartLoader() {
         </div>
 
         {/* ================= FULL SPEC TABLE ================= */}
-       <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] border rounded-lg shadow-sm bg-white">
-          <table className="w-full text-sm border-collapse">
-            <thead className="bg-gray-800 text-white sticky top-0">
+        <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] rounded-lg shadow-sm bg-white">
+          <table className="w-full text-sm">
+            <thead className="bg-green-600 text-white sticky top-0">
               <tr>
-                <th className="px-3 py-2">No</th>
-                <th className="px-3 py-2 text-center">Specification</th>
-                <th className="px-3 py-2">Unit</th>
-                <th className="px-3 py-2">Value</th>
+                <th className="w-[10%] px-2 md:px-3 py-2 text-left text-xs md:text-sm">
+                  No
+                </th>
+
+                <th className="w-[45%] pl-4 md:pl-30 py-2 text-left text-xs md:text-sm">
+                  Specification
+                </th>
+
+                <th className="w-[20%] px-2 md:px-3 py-2 text-left text-xs md:text-sm">
+                  Unit
+                </th>
+
+                <th className="w-[25%] px-2 md:px-3 py-2 text-left text-xs md:text-sm">
+                  Value
+                </th>
               </tr>
             </thead>
 
@@ -366,9 +389,23 @@ function ECartLoader() {
                 ["20", "Charger", "V/A", "External Charger 60V, 20A"],
                 ["21", "USB Charger", "No", "Yes"],
               ].map((row, i) => (
-                <tr key={i} className="even:bg-gray-100">
+                <tr
+                  key={i}
+                  className={i % 2 === 0 ? "bg-[#e3f6e9]" : "bg-[#c5ecd1]"}
+                >
                   {row.map((cell, j) => (
-                    <td key={j} className="px-2 md:px-3 py-1 md:py-2 text-[10px] md:text-sm border break-words">
+                    <td
+                      key={j}
+                      className={`
+                ${j === 1 ? "pl-4 md:pl-30" : "px-2 md:px-3"}
+                py-2
+                text-left
+                align-top
+                text-[10px] md:text-sm
+                break-words
+                whitespace-normal
+              `}
+                    >
                       {cell}
                     </td>
                   ))}
@@ -386,7 +423,7 @@ function ECartLoader() {
 /* ================= RETROFIT ================= */
 function EVRetrofit() {
   return (
-    <div className="grid md:grid-cols-2 gap-10 items-center">
+    <div className="grid md:grid-cols-2 gap-10 items-start">
       {/* Image */}
       <div className="flex justify-center">
         <img
@@ -432,11 +469,11 @@ function EVRetrofit() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-blue-100">
+                <tr className="bg-[#e3f6e9]">
                   <td className="px-4 py-2 font-medium">Range</td>
                   <td className="px-4 py-2">110km</td>
                 </tr>
-                <tr className="bg-blue-50">
+                <tr className="bg-[#c5ecd1]">
                   <td className="px-4 py-2 font-medium">Charging</td>
                   <td className="px-4 py-2">4 - 5 hrs</td>
                 </tr>
@@ -454,11 +491,11 @@ function EVRetrofit() {
                 </tr>
               </thead>
               <tbody>
-                <tr className="bg-blue-100">
+                <tr className="bg-[#e3f6e9]">
                   <td className="px-4 py-2 font-medium">Range</td>
                   <td className="px-4 py-2">70km</td>
                 </tr>
-                <tr className="bg-blue-50">
+                <tr className="bg-[#c5ecd1]">
                   <td className="px-4 py-2 font-medium">Charging</td>
                   <td className="px-4 py-2">0hr (Swapping)</td>
                 </tr>
