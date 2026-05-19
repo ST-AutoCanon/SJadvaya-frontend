@@ -423,87 +423,87 @@ function ECartLoader() {
 /* ================= RETROFIT ================= */
 function EVRetrofit() {
   return (
-    <div className="grid md:grid-cols-2 gap-10 items-start">
-      {/* Image */}
-      <div className="flex justify-center">
-        <img
-          src="/retro1.png"
-          className="rounded-xl shadow-lg w-full max-w-md"
-          onError={(e) => {
-            e.target.src = "https://via.placeholder.com/800x400?text=Image";
-          }}
-        />
-      </div>
+    <div className="bg-gray-100 py-10 px-4">
+      <div className="max-w-6xl mx-auto">
+        <div className="bg-white border border-black rounded-xl p-6">
+          <div className="grid md:grid-cols-2 gap-6 items-start">
 
-      {/* Content */}
-      <div>
-        <h2 className="text-3xl font-bold mb-4">EV Retrofit</h2>
-        <p className="text-gray-600 mb-6">
-          Convert your existing fuel vehicles into electric with our advanced
-          retrofit solutions. Save cost, reduce emissions, and embrace
-          sustainable mobility.
-        </p>
-
-        {/* <div className="space-y-3">
-          {[
-            "Lower Maintenance",
-            "Fleet Modernization",
-            "Reliable Performance",
-          ].map((item, i) => (
-            <div
-              key={i}
-              className="bg-green-100 text-green-800 px-4 py-2 rounded-lg w-fit"
-            >
-              {item}
+            {/* Image */}
+            <div className="flex justify-start">
+              <img
+                src="/retro1.png"
+                className="rounded-xl shadow-lg w-full max-w-md border"
+                onError={(e) => {
+                  e.target.src =
+                    "https://via.placeholder.com/800x400?text=Image";
+                }}
+              />
             </div>
-          ))}
-        </div> */}
-        <div className="grid sm:grid-cols-2 gap-6">
-          {/* Table 1 */}
-          <div className="overflow-hidden rounded-lg shadow-md">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="bg-green-600 text-white">
-                  <th className="px-4 py-2">Feature</th>
-                  <th className="px-4 py-2">Specification</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-[#e3f6e9]">
-                  <td className="px-4 py-2 font-medium">Range</td>
-                  <td className="px-4 py-2">110km</td>
-                </tr>
-                <tr className="bg-[#c5ecd1]">
-                  <td className="px-4 py-2 font-medium">Charging</td>
-                  <td className="px-4 py-2">4 - 5 hrs</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
 
-          {/* Table 2 */}
-          <div className="overflow-hidden rounded-lg shadow-md">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="bg-green-600 text-white">
-                  <th className="px-4 py-2">Feature</th>
-                  <th className="px-4 py-2">Specification</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-[#e3f6e9]">
-                  <td className="px-4 py-2 font-medium">Range</td>
-                  <td className="px-4 py-2">70km</td>
-                </tr>
-                <tr className="bg-[#c5ecd1]">
-                  <td className="px-4 py-2 font-medium">Charging</td>
-                  <td className="px-4 py-2">0hr (Swapping)</td>
-                </tr>
-              </tbody>
-            </table>
+            {/* Content */}
+            <div>
+              <h2 className="text-3xl font-bold mb-4">EV Retrofit</h2>
+
+              <p className="text-gray-600 mb-6">
+                Convert your existing fuel vehicles into electric with our
+                advanced retrofit solutions. Save cost, reduce emissions, and
+                embrace sustainable mobility.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-6">
+                {/* Table 1 */}
+                <div className="overflow-hidden rounded-lg shadow-md border">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-green-600 text-white">
+                        <th className="px-4 py-2">Feature</th>
+                        <th className="px-4 py-2">Specification</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr className="bg-[#e3f6e9]">
+                        <td className="px-4 py-2 font-medium">Range</td>
+                        <td className="px-4 py-2">110km</td>
+                      </tr>
+
+                      <tr className="bg-[#c5ecd1]">
+                        <td className="px-4 py-2 font-medium">Charging</td>
+                        <td className="px-4 py-2">4 - 5 hrs</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* Table 2 */}
+                <div className="overflow-hidden rounded-lg shadow-md border">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-green-600 text-white">
+                        <th className="px-4 py-2">Feature</th>
+                        <th className="px-4 py-2">Specification</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr className="bg-[#e3f6e9]">
+                        <td className="px-4 py-2 font-medium">Range</td>
+                        <td className="px-4 py-2">70km</td>
+                      </tr>
+
+                      <tr className="bg-[#c5ecd1]">
+                        <td className="px-4 py-2 font-medium">Charging</td>
+                        <td className="px-4 py-2">0hr (Swapping)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
-}  
+}
