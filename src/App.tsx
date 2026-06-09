@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -17,21 +17,10 @@ import ProductsPage from "./pages/products/product";
 function App() {
   const [showLogin, setShowLogin] = useState(false);
 
-  const location = useLocation();
-
-  const hideLayout = location.pathname === "/dashboard";
-
-  // ADD THIS HERE
-  useEffect(() => {
-    if (location.pathname === "/dashboard") {
-      setShowLogin(false);
-    }
-  }, [location.pathname]);
-
   return (
     <div className="flex flex-col min-h-screen bg-white text-gray-900">
       {/* Navbar */}
-      {!hideLayout && <Navbar onLoginClick={() => setShowLogin(true)} />}
+      <Navbar onLoginClick={() => setShowLogin(true)} />
 
       {/* Login Modal */}
       {showLogin && <LoginPage closeLogin={() => setShowLogin(false)} />}
@@ -56,7 +45,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      {!hideLayout && <Footer />}
+      <Footer />
     </div>
   );
 }
