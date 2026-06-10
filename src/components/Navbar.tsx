@@ -16,8 +16,8 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/35 backdrop-blur-md relative">
-      
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
+         
+   <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
         {/* Logo */}
         <img src="/logo.png" alt="Logo" className="h-18 w-auto" />
 
