@@ -26,7 +26,7 @@ function App() {
       {showLogin && <LoginPage closeLogin={() => setShowLogin(false)} />}
 
       {/* Routes */}
-      <main className="flex-grow">
+      <main className="">
         <Routes>
           <Route path="/" element={<Home />} />
 
