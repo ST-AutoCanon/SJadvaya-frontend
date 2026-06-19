@@ -41,14 +41,14 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
         </div>
 
         {/* Desktop Login */}
-        {/* <div className="hidden md:block">
+        <div className="hidden md:block">
           <button
-            onClick={onLoginClick}
-            className="bg-green-600 text-white px-5 py-2 rounded hover:bg-green-700 transition-colors"
+            // onClick={onLoginClick}
+            className=" text-white px-5 py-2 rounded hover:bg-green-700 transition-colors"
           >
-            User Login
+            {/* User Login */}
           </button>
-        </div> */}
+        </div>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden text-white">
