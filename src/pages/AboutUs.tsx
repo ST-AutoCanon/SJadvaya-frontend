@@ -151,7 +151,7 @@ Project Execution & Delivery | Production Planning & Control | Toyota Production
   return (
     <div className="w-full">
       {/* ================= ABOUT ================= */}
-      <div className="max-w-7xl mx-auto px-4 md:px-12 py-12 md:py-16 flex flex-col md:flex-row items-start gap-8 md:gap-12 mt-16 md:mt-24">
+      <div className="max-w-7xl mx-auto px-4 md:px-12 py-12 md:py-16 flex flex-col md:flex-row items-start gap-8 md:gap-12">
         {/* <div className="flex-1 w-full">
           <img
             src="/aboutus.png"
