@@ -202,7 +202,7 @@ function EVBus() {
         </div>
 
         {/* Row 2 TABLE (UPDATED TD STYLING) */}
-        <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] rounded-lg shadow-sm bg-white">
+        {/* <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] rounded-lg shadow-sm bg-white">
           <table className="w-full text-sm table-fixed">
             <thead className="bg-green-600 text-white sticky top-0">
               <tr>
@@ -273,7 +273,7 @@ function EVBus() {
               ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
 
       </div>
     </div>
@@ -343,7 +343,7 @@ function ECartLoader() {
         </div>
 
         {/* ================= FULL SPEC TABLE ================= */}
-        <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] rounded-lg shadow-sm bg-white">
+        {/* <div className="overflow-y-auto max-h-[420px] md:max-h-[500px] rounded-lg shadow-sm bg-white">
           <table className="w-full text-sm">
             <thead className="bg-green-600 text-white sticky top-0">
               <tr>
@@ -413,7 +413,7 @@ function ECartLoader() {
               ))}
             </tbody>
           </table>
-        </div>
+        </div> */}
 
       </div>
     </div>
