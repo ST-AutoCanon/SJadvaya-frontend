@@ -17,7 +17,7 @@ const slides: Slide[] = [
     id: 1,
     title: "Advancing Electric Mobility",
     subtitle: "MAKE IN INDIA",
-    image: "/banner1.png",
+    image: "/banner2.png",
   },
   {
     id: 2,
