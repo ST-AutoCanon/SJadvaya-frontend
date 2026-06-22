@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
       : "hover:text-green-400 transition-colors";
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-black/35 backdrop-blur-md relative">
+    <nav className="top-0 left-0 w-full z-50 bg-gradient-to-br from-[#0f172a] via-[#0b1a2b] to-[#0f172a] text-gray-300 relative">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-2">
         {/* Logo */}
         <img src="/logo.png" alt="Logo" className="h-18 w-auto" />
@@ -42,10 +42,10 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
         {/* Desktop Login */}
         <div className="hidden md:block">
           <button
-            onClick={onLoginClick}
+            // onClick={onLoginClick}
             className=" text-white px-5 py-2 rounded hover:bg-green-700 transition-colors"
           >
-            User Login
+            {/* User Login */}
           </button>
         </div>
 
@@ -103,13 +103,13 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
               User Login
             </button> */}
             <button
-              onClick={() => {
-                setIsOpen(false);
-                onLoginClick?.();
-              }}
-              className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+              // onClick={() => {
+              //   setIsOpen(false);
+              //   onLoginClick?.();
+              // }}
+              // className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
             >
-              User Login
+              {/* User Login */}
             </button>
           </div>
         </div>
