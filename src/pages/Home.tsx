@@ -54,15 +54,13 @@ export default function Home() {
     setCurrent(index);
   };
 
-
   useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrent((prev) => (prev + 1) % slides.length);
-  }, 5000);
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 5000);
 
-  return () => clearInterval(interval);
+    return () => clearInterval(interval);
   }, []);
-  
 
   return (
     <div>
