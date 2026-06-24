@@ -174,8 +174,6 @@ function EVBus() {
                   "12mt & 13.5mt",
                   "Range 300 ~ 400km",
                   "High % of Localization",
-                  // "Mfg. Plant in Karnataka",
-                  "Plant & Machinery decided",
                   "Expected Line off – 2nd Qtr ’27",
                 ].map((item, i) => (
                   <div
