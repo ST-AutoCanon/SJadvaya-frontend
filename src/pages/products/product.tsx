@@ -151,7 +151,6 @@ function EVBus() {
   return (
     <div className="bg-gray-100 py-10 px-4">
       <div className="max-w-6xl mx-auto space-y-10">
-
         {/* Row 1 */}
         <div className="flex flex-col lg:flex-row gap-10 items-center bg-white border rounded-xl p-6">
           <div className="flex justify-center flex-shrink-0">
@@ -175,10 +174,14 @@ function EVBus() {
                   "12mt & 13.5mt",
                   "Range 300 ~ 400km",
                   "High % of Localization",
-                  "Mfg. Plant in Karnataka",
+                  // "Mfg. Plant in Karnataka",
+                  "Plant & Machinery decided",
                   "Expected Line off – 2nd Qtr ’27",
                 ].map((item, i) => (
-                  <div key={i} className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border">
+                  <div
+                    key={i}
+                    className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
+                  >
                     {item}
                   </div>
                 ))}
@@ -190,9 +193,11 @@ function EVBus() {
                   "Bus Styling finalized",
                   "Structure design 90% completed",
                   "BOM sources Identified",
-                  "Plant & Machinery decided",
                 ].map((item, i) => (
-                  <div key={i} className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border">
+                  <div
+                    key={i}
+                    className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
+                  >
                     {item}
                   </div>
                 ))}
@@ -274,7 +279,6 @@ function EVBus() {
             </tbody>
           </table>
         </div> */}
-
       </div>
     </div>
   );
