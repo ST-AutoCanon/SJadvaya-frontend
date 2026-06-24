@@ -168,13 +168,13 @@ function EVBus() {
               Upcoming project
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-3">
                 {[
                   "12mt & 13.5mt",
                   "Range 300 ~ 400km",
                   "High % of Localization",
-                  "Expected Line off – 2nd Qtr ’27",
+                  "Mfg. Plant in Karnataka",
                 ].map((item, i) => (
                   <div
                     key={i}
@@ -187,10 +187,29 @@ function EVBus() {
 
               <div className="space-y-3">
                 {[
-                  "Identified Mass production facility",
-                  "Bus Styling finalized",
-                  "Structure design 90% completed",
-                  "BOM sources Identified",
+                  // "Identified Mass production facility",
+                  // "Bus Styling finalized",
+                  // "Structure design 90% completed",
+                  // "BOM sources Identified",
+                  // "Plant & Machinery decided",
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-green-100 text-green-800 px-4 py-2 rounded-lg border"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div> */}
+
+            <div className="grid grid-cols-1 gap-6">
+              <div className="space-y-3">
+                {[
+                  "12mt & 13.5mt",
+                  "Range 300 ~ 400km",
+                  "High % of Localization",
+                  "Mfg. Plant in Karnataka",
                 ].map((item, i) => (
                   <div
                     key={i}
@@ -201,6 +220,7 @@ function EVBus() {
                 ))}
               </div>
             </div>
+            
           </div>
         </div>
 
