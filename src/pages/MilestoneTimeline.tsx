@@ -217,7 +217,7 @@ const cards = [
   {
     id: 2,
     title: "Security Compliance",
-    image: "maj2.png",
+    image: "maj22.png",
     content: "JIDO our First EV product ",
   },
   {
