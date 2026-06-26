@@ -10,6 +10,7 @@ interface Slide {
   title: string;
   subtitle: string;
   image: string;
+  mobileImage: string;
 }
 
 const slides: Slide[] = [
@@ -18,24 +19,29 @@ const slides: Slide[] = [
     title: "Advancing Electric Mobility",
     subtitle: "MAKE IN INDIA",
     image: "/banner2.png",
+    // image: "/banner_1.png",
+    mobileImage: "/banner_1.png",
   },
   {
     id: 2,
     title: "Future of Electric Mobility",
     subtitle: "SUSTAINABLE DRIVING",
     image: "/banner4.png",
+    mobileImage: "/banner_2.png",
   },
   {
     id: 3,
     title: "Innovative EV Solutions",
     subtitle: "POWERING THE NEXT GENERATION",
     image: "/banner3.png",
+    mobileImage: "/banner_3.png",
   },
   {
     id: 4,
     title: "Intelligent EV Infrastructure",
     subtitle: "MODERN MOBILITY",
     image: "/banner5.png",
+    mobileImage: "/banner_5.png",
   },
 ];
 
@@ -81,8 +87,17 @@ export default function Home() {
               src={slide.image}
               alt={slide.title}
               // className="w-full h-full object-cover"
-              className="w-full h-full object-contain md:object-cover"
+              className="hidden md:block w-full h-full object-cover"
+
               // className="w-full h-full object-contain md:object-cover"
+              // className="w-full h-full object-contain md:object-cover"
+            />
+
+            {/* Mobile Image */}
+            <img
+              src={slide.mobileImage}
+              alt={slide.title}
+              className="block md:hidden w-full h-full object-cover"
             />
 
             {/* Gradient Overlay */}

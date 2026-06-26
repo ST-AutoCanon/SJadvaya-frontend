@@ -162,7 +162,7 @@ Project Execution & Delivery | Production Planning & Control | Toyota Production
         <div className="flex flex-col md:flex-row gap-10 items-stretch">
           <div className="flex-1 flex md:mt-[150px]">
             <img
-              src="/about(8).png"
+              src="/about.png"
               alt="Electric Vehicles"
               className="rounded-xl shadow-lg w-full h-full object-cover"
             />
