@@ -42,10 +42,10 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
         {/* Desktop Login */}
         <div className="hidden md:block">
           <button
-            // onClick={onLoginClick}
+             onClick={onLoginClick}
             className=" text-white px-5 py-2 rounded hover:bg-green-700 transition-colors"
           >
-            {/* User Login */}
+             User Login 
           </button>
         </div>
 
@@ -103,13 +103,13 @@ const Navbar: React.FC<NavbarProps> = ({ onLoginClick }) => {
               User Login
             </button> */}
             <button
-              // onClick={() => {
-              //   setIsOpen(false);
-              //   onLoginClick?.();
-              // }}
-              // className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+              onClick={() => {
+                setIsOpen(false);
+                onLoginClick?.();
+               }}
+               className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
             >
-              {/* User Login */}
+               User Login 
             </button>
           </div>
         </div>
